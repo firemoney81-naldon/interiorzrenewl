@@ -6,10 +6,10 @@
 <meta property="og:type" content="website"/>
 <meta property="og:url" content="/"/>
 <meta property="og:image" content="https://financial.pstatic.net/insurance/insurance_car.png"/>
-<meta name="description" content="리모델링가격 추가 비용 없는 확정 견적제로 안심하고 진행" />
-<meta property="og:description" content="리모델링가격 추가 비용 없는 확정 견적제로 안심하고 진행"/>
-<meta itemprop="description" content="리모델링가격 추가 비용 없는 확정 견적제로 안심하고 진행" />
-<meta name="twitter:description" content="리모델링가격 추가 비용 없는 확정 견적제로 안심하고 진행"/>
+<meta name="description" content="" />
+<meta property="og:description" content=""/>
+<meta itemprop="description" content="" />
+<meta name="twitter:description" content=""/>
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="리모델링가격"/>
 <meta name="twitter:url" content="/"/>
@@ -72,7 +72,6 @@
 <title>리모델링가격</title>
 
 <meta name="next-head-count" content="25"/>
-<meta charSet="utf-8"/>
 <meta name="format-detection" content="telephone=no"/>
 
 
@@ -80,341 +79,733 @@
 
 
 
-  <!-- Schema.org HomeAndConstructionBusiness 마크업(JSON-LD) -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HomeAndConstructionBusiness",
-    "name": "전국 리모델링 가격 정보 센터",
-    "description": "2026년 전국 주택 및 아파트 리모델링 예상 비용, 평균 견적, 시공 사례 비교 및 합리적인 업체 선정 가이드 제공",
-    "image": "https://domain.com/remodeling-logo.png",
-    "url": "https://domain.com/remodeling-cost",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "대한민국",
-      "addressRegion": "전국",
-      "addressCountry": "KR"
-    },
-    "areaServed": {
-      "@type": "Country",
-      "name": "KR"
-    },
-    "priceRange": "₩₩₩",
-    "offers": {
-      "@type": "Offer",
-      "name": "리모델링 견적 비교 서비스",
-      "description": "무료로 여러 업체의 견적을 비교하고 최적의 리모델링 솔루션을 찾으세요.",
-      "priceCurrency": "KRW",
-      "priceSpecification": {
-        "@type": "UnitPriceSpecification",
-        "price": "0",
-        "unitText": "견적 비교"
+	
+  <style>
+    /* 폰트 및 기본 디자인 설정 */
+    body { 
+      font-family: 'Noto Sans KR', sans-serif; 
+      color: #2f3542; 
+      line-height: 1.9; 
+      margin: 0; 
+      padding: 0; 
+      background-color: #f1f2f6; 
+    }
+    .container { 
+      max-width: 1000px; 
+      margin: 40px auto; 
+      padding: 35px; 
+      background-color: #ffffff; 
+      border-radius: 12px; 
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05); 
+    }
+
+    /* 헤더 및 타이틀 계층 구조 */
+    h1 { 
+      font-size: 2.3em; 
+      color: #1e3d59; 
+      border-bottom: 4px solid #1e3d59; 
+      padding-bottom: 20px; 
+      text-align: center; 
+      margin-bottom: 30px; 
+      font-weight: 700; 
+      letter-spacing: -1px;
+    }
+    h2 { 
+      font-size: 1.7em; 
+      color: #17b978; 
+      margin-top: 2.5em; 
+      border-left: 6px solid #17b978; 
+      padding-left: 15px; 
+      font-weight: 600; 
+      letter-spacing: -0.5px;
+    }
+    h3 { 
+      font-size: 1.3em; 
+      color: #1e3d59; 
+      margin-top: 2em; 
+      padding-bottom: 8px; 
+      border-bottom: 2px solid #f1f2f6; 
+      font-weight: 600;
+    }
+
+    /* 본문 텍스트 및 문단 설정 */
+    p { 
+      margin-bottom: 1.8em; 
+      text-align: justify; 
+      font-size: 1.05em;
+      color: #57606f;
+    }
+    ul, ol { 
+      margin-bottom: 1.8em; 
+      padding-left: 25px; 
+      font-size: 1.02em;
+      color: #57606f;
+    }
+    li { 
+      margin-bottom: 0.9em; 
+    }
+
+    /* 하이라이트 박스 영역 */
+    .highlight { 
+      background-color: #f5f6fa; 
+      padding: 25px; 
+      border-radius: 8px; 
+      border-left: 5px solid #1e3d59; 
+      margin: 25px 0; 
+      font-style: normal; 
+      color: #2f3542; 
+    }
+    .highlight-title {
+      font-weight: 700;
+      color: #1e3d59;
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    /* 부드럽고 가독성 높은 테이블 스타일 */
+    table { 
+      width: 100%; 
+      border-collapse: collapse; 
+      margin: 25px 0; 
+      font-size: 0.95em; 
+      border-radius: 8px; 
+      overflow: hidden; 
+      box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+    }
+    table th, table td { 
+      padding: 14px 18px; 
+      text-align: left; 
+      border-bottom: 1px solid #f1f2f6; 
+    }
+    table th { 
+      background-color: #1e3d59; 
+      color: #ffffff; 
+      font-weight: 600; 
+    }
+    table tr:hover { 
+      background-color: #f8f9fa; 
+    }
+
+    /* 다채롭고 부드러운 계산기 폼 세션 */
+    .form-section { 
+      background-color: #f7f9fc; 
+      padding: 30px; 
+      border-radius: 10px; 
+      margin: 35px 0; 
+      border: 1px solid #e1e8ed; 
+    }
+    .form-section h3 {
+      margin-top: 0;
+      color: #1e3d59;
+      border-bottom: none;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    .form-section label { 
+      display: block; 
+      margin-bottom: 8px; 
+      font-weight: 600; 
+      color: #2f3542; 
+    }
+    .form-section select, 
+    .form-section input[type="number"] { 
+      width: 100%; 
+      padding: 12px; 
+      border: 1px solid #ced6e0; 
+      border-radius: 6px; 
+      font-size: 1em; 
+      box-sizing: border-box;
+      background-color: #ffffff;
+      color: #2f3542;
+    }
+    .cta-button { 
+      display: block; 
+      width: 100%;
+      padding: 15px; 
+      background-color: #17b978; 
+      color: #ffffff; 
+      text-decoration: none; 
+      border: none;
+      border-radius: 6px; 
+      font-weight: 700; 
+      font-size: 1.15em; 
+      text-align: center;
+      cursor: pointer;
+      transition: background-color 0.2s ease; 
+    }
+    .cta-button:hover { 
+      background-color: #139e65; 
+    }
+
+    /* 시각적 요소를 위한 간이 그래프 바 */
+    .graph-container { 
+      margin: 25px 0; 
+      padding: 25px; 
+      border: 1px solid #e1e8ed; 
+      border-radius: 8px; 
+      background-color: #ffffff; 
+    }
+    .graph-item {
+      margin-bottom: 15px;
+    }
+    .bar-wrapper {
+      background-color: #f1f2f6;
+      border-radius: 4px;
+      overflow: hidden;
+      height: 24px;
+      margin-top: 5px;
+    }
+    .bar { 
+      height: 100%; 
+      background-color: #1e3d59; 
+      border-radius: 4px; 
+      transition: width 0.5s ease-in-out;
+    }
+    .bar.green {
+      background-color: #17b978;
+    }
+    .label { 
+      font-size: 0.95em; 
+      color: #2f3542; 
+      display: flex; 
+      justify-content: space-between; 
+      font-weight: 600;
+    }
+
+    /* 내비게이션 링크 목차 */
+    .nav-links { 
+      margin: 30px 0; 
+      padding: 20px; 
+      background-color: #f5f6fa; 
+      border-radius: 8px; 
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+    }
+    @media (max-width: 600px) {
+      .nav-links {
+        grid-template-columns: 1fr;
       }
     }
-  }
-  </script>
-
-  <!-- Google Fonts for better readability -->
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700;900&display=swap" rel="stylesheet">
-
-  <style>
-    /* Global Styles */
-    body { font-family: 'Noto Sans KR', sans-serif; margin:0; padding:0; background-color:#f8fafc; color:#333; line-height:1.7; font-size:16px; }
-    header { background-color:#007bff; color:#ffffff; padding:40px 20px; text-align:center; box-shadow:0 4px 10px rgba(0,0,0,0.1); }
-    main { max-width:1000px; margin:20px auto; padding:20px; background-color:#ffffff; border-radius:12px; box-shadow:0 6px 20px rgba(0,0,0,0.08); }
-    section { margin-bottom:40px; border-left:4px solid #007bff; padding-left:20px; }
-    footer { text-align:center; padding:30px 20px; background-color:#e9ecef; color:#6c757d; font-size:14px; margin-top:40px; }
-
-    /* Typography */
-    h1 { font-size:2.8rem; font-weight:900; line-height:1.4; margin-bottom:10px; }
-    h2 { font-size:2rem; font-weight:700; color:#0056b3; margin-top:30px; margin-bottom:15px; border-bottom:2px solid #e0e0e0; padding-bottom:10px; }
-    h3 { font-size:1.6rem; font-weight:700; color:#343a40; margin-top:20px; margin-bottom:10px; }
-    p, ul, ol, dl, table { margin-bottom:20px; font-weight:300; }
-    li { margin-bottom:8px; }
-
-    /* Navigation */
-    nav { background-color:#f0f4f8; padding:10px 0; border-bottom:1px solid #dee2e6; margin-bottom:30px; }
-    nav ul { list-style:none; padding:0; margin:0; display:flex; justify-content:center; flex-wrap:wrap; }
-    nav li { margin:0 15px; }
-    nav a { text-decoration:none; color:#333; font-weight:700; padding:10px 0; display:inline-block; transition:color 0.3s ease; }
-    nav a:hover { color:#007bff; }
-
-    /* CTA Button */
-    .btn-cta { display:inline-block; background-color:#28a745; color:#ffffff; font-size:1.1rem; font-weight:700; padding:15px 30px; border-radius:30px; text-decoration:none; margin-top:20px; transition:background-color 0.3s ease, transform 0.2s ease; box-shadow:0 4px 10px rgba(40, 167, 69, 0.3); }
-    .btn-cta:hover { background-color:#218838; transform:translateY(-2px); }
-
-    /* Tables */
-    table { width:100%; border-collapse: collapse; margin-top:20px; background-color:#f7f7f7; border-radius:8px; overflow:hidden; }
-    th, td { border:1px solid #e9ecef; padding:15px; text-align:left; font-size:15px; }
-    th { background-color:#007bff; color:#ffffff; font-weight:700; }
-    td strong { font-weight:700; color:#0056b3; }
-
-    /* Form Styles */
-    form { background-color:#f8f9fa; border:1px solid #e9ecef; border-radius:8px; padding:30px; max-width:600px; margin:auto; box-shadow:0 2px 8px rgba(0,0,0,0.05); }
-    label { display:block; margin-bottom:8px; font-weight:700; color:#495057; }
-    input[type="text"], input[type="tel"], input[type="email"], select, textarea { width:100%; padding:12px; border:1px solid #ced4da; border-radius:4px; margin-bottom:15px; box-sizing:border-box; font-size:1rem; transition:border-color 0.3s ease; }
-    input:focus, select:focus, textarea:focus { border-color:#007bff; outline:none; }
-    textarea { resize:vertical; }
-
-    /* Utility Classes */
-    .anchor { display:block; position:relative; top:-80px; visibility:hidden; }
-    .highlight { background-color:#fff3cd; padding:5px; border-radius:4px; font-weight:700; color:#856404; }
-    .info-box { background-color:#f0f7ff; border-left:4px solid #007bff; padding:20px; border-radius:8px; margin-top:20px; line-height:1.6; }
-    .image-caption { text-align:center; font-style:italic; font-size:14px; color:#6c757d; margin-top:5px; }
-
-    /* Responsive Design */
-    @media (max-width: 768px) {
-      main { margin:10px; padding:15px; }
-      h1 { font-size:2.2rem; }
-      h2 { font-size:1.8rem; }
-      nav ul { flex-direction:column; align-items:flex-start; }
-      nav li { margin:5px 0; border-bottom:1px solid #f0f4f8; width:100%; }
-      nav a { padding:10px 20px; }
-      .btn-cta { width:100%; padding:15px 0; text-align:center; }
+    .nav-links a { 
+      color: #1e3d59; 
+      text-decoration: none; 
+      font-weight: 600; 
+      transition: color 0.2s; 
     }
-  </style>
-</head>
+    .nav-links a:hover { 
+      color: #17b978; 
+      text-decoration: underline; 
+    }
 
+    /* 신뢰성 강화를 위한 외부 링크 */
+    .external-links { 
+      margin-top: 40px; 
+      border-top: 2px solid #f1f2f6; 
+      padding-top: 25px; 
+    }
+    .external-links p {
+      font-weight: 600;
+      color: #1e3d59;
+      margin-bottom: 10px;
+    }
+    .external-links a { 
+      color: #57606f; 
+      text-decoration: none; 
+      margin-right: 20px; 
+      font-size: 0.9em; 
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    .external-links a:hover {
+      text-decoration: underline;
+      color: #17b978;
+    }
+
+    .json-ld-placeholder { display: none; }
+  </style>
+
+  <script type="application/ld+json" class="json-ld-placeholder">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "2026년 기준 아파트 리모델링 평당 평균 가격은 얼마인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "2026년 현재 기본형 실속 리모델링의 경우 평당 평균 비용은 120만 원에서 150만 원 선이며, 자재 등급을 높이거나 구조 변경이 들어가는 고급형 시공은 평당 200만 원에서 250만 원 이상으로 예상 금액이 책정됩니다. 평형과 세부 공정, 그리고 확장 공사 여부에 따라 전체적인 견적 금액에 차이가 발생합니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "리모델링 견적을 가장 저렴한곳 혹은 싼곳에서 안심하고 진행하는 방법은 무엇인가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "단순히 낮은 시공 금액을 제시하는 싼곳보다는, 세부 견적서의 공정별 자재 단가와 인건비가 명확히 명시된 전문 업체를 비교 선정하는 것이 중요합니다. 시공 하자 보증 보험 가입이 가능한지 여부를 확인하고, 온라인 플랫폼의 신규 가입 이벤트나 사은품 및 현금지원 혜택을 비교해보는 것이 권장됩니다."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "인터넷 커뮤니티나 SNS의 내돈내산 후기 정보는 신뢰할 만한가요?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "디시, 보배드림, 펨코 등 주요 온라인 커뮤니티의 내돈내산 후기는 실제 하자 발생 사례나 숨겨진 추가 비용 청구 등의 생생한 단점을 확인할 수 있어 유용합니다. 네이버나 구글의 공식 카페 후기와 더불어 유튜브, 인스타그램 등의 포트폴리오를 다각도로 비교해 분석하는 것이 좋습니다."
+          }
+        }
+      ]
+    }
+  </script>
+</head>
 <body>
 
-  <header>
-    <h1>2026년 전국 리모델링 가격 정보: 예상 비용, 견적 비교 분석</h1>
-    <p>아파트, 주택 리모델링 평균 비용부터 합리적인 견적 받는 팁까지, 2026년 최신 정보 제공</p>
-    <a class="btn-cta" href="#contact">리모델링 무료 견적 받기</a>
-  </header>
+  <div class="container">
+    <h1>2026년 전국 아파트 리모델링 가격 비교 및 저렴한곳 싼곳 선정 가이드</h1>
 
-  <nav aria-label="페이지 내 이동">
-    <ul>
-      <li><a href="#about-remodeling">리모델링 기본 정보</a></li>
-      <li><a href="#pricing-factors">가격 결정 요인</a></li>
-      <li><a href="#cost-guide">리모델링 비용 가이드</a></li>
-      <li><a href="#checklist">시공 전 체크리스트</a></li>
-      <li><a href="#faq">자주 묻는 질문</a></li>
-      <li><a href="#contact">견적 상담</a></li>
-    </ul>
-  </nav>
+    <p>주거 공간을 새롭게 단장하는 리모델링은 가치 상승과 정주 여건 개선을 위해 많은 이들이 고민하는 중대한 결정입니다. 그러나 매년 가파르게 상승하는 원자재 가격과 인건비로 인해 리모델링 가격을 투명하게 파악하고 합리적인 수준의 견적을 도출하기란 결코 쉽지 않습니다. 본 가이드는 2026년 최신 인테리어 시장 동향을 기반으로 하여 전국 주요 지역별 예상 시공 비용의 실태를 파악하고, 불필요한 추가 금액 지출 없이 신뢰할 수 있는 전문 업체를 선별하여 저렴한곳 및 싼곳을 현명하게 비교 선택하는 최적의 로직을 제시합니다.</p>
 
-  <main>
-    <section id="about-remodeling">
-      <span id="about-remodeling-anchor" class="anchor"></span>
-      <h2>리모델링이란 무엇이며, 왜 중요한가?</h2>
-      <p>리모델링은 노후된 건물의 기능 향상이나 미관 개선을 목적으로 하는 건축 행위입니다. 단순히 인테리어를 변경하는 것을 넘어, 건물의 구조적 안전성 보강, 에너지 효율 개선, 생활 편의 증진 등 다양한 목적으로 진행됩니다. 특히, 2026년 현재는 아파트와 주택의 평균 수명이 길어지면서 <span class="highlight">노후 주택 리모델링 수요가 급증</span>하고 있습니다. 리모델링을 통해 건물의 가치를 높이고 쾌적한 주거 환경을 조성할 수 있습니다.</p>
+    <div class="nav-links">
+      <a href="#section1">1. 2026년 리모델링 평균 가격 및 주요 요인</a>
+      <a href="#section2">2. 전국 30대 주요 지역별 예상 비용 분석</a>
+      <a href="#section3">3. 전문 업체 비교를 통한 저렴한곳 탐색법</a>
+      <a href="#section4">4. 인터넷 플랫폼 및 정보 활용의 장단점</a>
+      <a href="#section5">5. 시뮬레이터를 통한 예상 견적 계산기</a>
+      <a href="#section6">6. 커뮤니티 내돈내산 후기 및 FAQ 분석</a>
+      <a href="#section7">7. 리모델링 계약 전 체크리스트와 지원금 혜택</a>
+    </div>
 
-      <h3>리모델링 유형별 정의 및 범위</h3>
-      <ul>
-        <li><strong>부분 리모델링:</strong> 주방, 화장실, 베란다 확장 등 특정 공간만 개선하는 방식입니다. 비용 부담이 적고 기간이 짧아 가장 대중적인 유형입니다.</li>
-        <li><strong>전체 리모델링:</strong> 주택 전체의 바닥, 벽, 천장, 문, 창호 등을 모두 교체하고 내부 구조 변경까지 포함하는 대규모 공사입니다. 주택의 기능과 가치를 근본적으로 변화시킵니다.</li>
-        <li><strong>대수선 리모델링:</strong> 건물의 구조체를 변경하거나 보강하는 공사입니다. 벽체 철거, 증축, 개축 등 건축법의 적용을 받는 복잡한 공사입니다.</li>
-      </ul>
+    <h2 id="section1">1. 2026년 리모델링 평균 가격 및 주요 요인</h2>
 
-      <p>리모델링은 단순히 보기 좋은 집을 만드는 것을 넘어, 거주자의 삶의 질을 향상시키는 중요한 투자입니다. 하지만 복잡한 공사 과정과 투명하지 않은 비용 구조 때문에 많은 분들이 어려움을 겪습니다. 이 가이드는 전국 단위의 리모델링 평균 비용을 분석하여 합리적인 <span class="highlight">리모델링 견적</span>을 받는 데 도움을 드리고자 합니다.</p>
-    </section>
+    <p>리모델링을 계획할 때 가장 먼저 접하게 되는 질문은 평당 시공 가격이 대체 얼마 수준으로 형성되어 있는가 하는 점입니다. 2026년 주거용 리모델링 시장의 평당 평균 비용은 시공 범위와 자재의 등급에 따라 크게 요동칩니다. 일반적으로 기본 철거와 도배, 장판, 싱크대 교체 수준의 실속형 부분 공사는 평당 120만 원에서 150만 원 선에서 예산 설정이 이루어집니다. 반면, 내부 전체 레이아웃을 변경하고 시스템 에어컨 설치, 고성능 이중창호 교체, 그리고 타일 및 주방 기기를 프리미엄 라인으로 구성하는 고급형의 경우 평당 200만 원에서 280만 원 이상의 예상 금액을 고려해야 합니다.</p>
 
-    <section id="pricing-factors">
-      <span id="pricing-factors-anchor" class="anchor"></span>
-      <h2>리모델링 가격을 결정하는 핵심 요인 분석</h2>
-      <p>리모델링 <span class="highlight">예상 비용</span>은 단순히 평수만으로 결정되지 않습니다. 공사 범위, 자재 등급, 인건비, 철거 및 폐기물 처리 등 여러 요소가 복합적으로 작용합니다. <span class="highlight">평균 리모델링 견적</span>을 산출하기 위해 필수적으로 고려해야 할 주요 요인들을 살펴보겠습니다.</p>
+    <div class="highlight">
+      <span class="highlight-title">리모델링 금액 단가 변동의 핵심 원인</span>
+      최근 자재 공급망의 불안정과 고숙련 기술자의 인건비 상승이 겹치면서 기본 고정비가 크게 올랐습니다. 전체 공정 중에서 창호 교체와 목공 작업, 전기 배선 작업의 비중이 커질수록 예상 비용이 계단식으로 누적되므로, 초기 견적을 받아볼 때 항목별 상세 수량과 규격이 명시되어 있는지 확인하는 절차가 반드시 필요합니다.
+    </div>
 
-      <h3>1. 공사 범위 및 난이도: "부분 vs. 전체 리모델링"</h3>
-      <p>전체 리모델링은 철거, 목공, 전기, 설비, 도배, 장판 등 모든 공종이 포함되어 비용이 높습니다. 반면, 부분 리모델링은 필요한 부분만 시공하므로 비용을 절감할 수 있습니다. 예를 들어, <span class="highlight">화장실 리모델링</span>만 진행할 경우 300~500만원 선의 비용이 발생하지만, 20평대 아파트 전체 리모델링은 2,000만원 이상의 비용이 발생할 수 있습니다.</p>
+    <p>시공 가격에 미치는 또 다른 결정적인 변수는 베란다 확장 공사와 구조 진단 유무입니다. 노후 주택일수록 벽체 수평 작업이나 배관 설비 이설 등 보이지 않는 기초 공정에서 상당한 지출이 추가됩니다. 따라서 단지 평당 단가가 저렴하다고 해서 계약을 섣불리 진행했다가는 공사 도중 예상치 못한 자재 수급 이슈나 현장 난이도를 이유로 수백만 원 단위의 추가 비용이 청구되어 싼곳이 도리어 비싼 곳으로 변질되는 낭패를 볼 수 있습니다.</p>
 
-      <h3>2. 자재 등급 및 브랜드 선택: "저렴한 자재 vs. 고급 자재"</h3>
-      <p>자재 선택은 리모델링 비용에 가장 큰 영향을 미칩니다. 국산 자재와 수입 자재, 일반 브랜드와 고급 브랜드의 가격 차이가 큽니다. 예를 들어, 바닥재 선택 시 <span class="highlight">저렴한 장판</span>과 고급 강마루, 또는 원목 마루의 <span class="highlight">가격 차이</span>는 평당 2~5배에 달할 수 있습니다. 예산에 맞춰 자재의 등급을 신중하게 선택하는 것이 중요합니다.</p>
+    <h2 id="section2">2. 전국 30대 주요 지역별 예상 비용 분석</h2>
 
-      <h3>3. 인건비 및 시공 업체 선택</h3>
-      <p>리모델링은 인건비 비중이 높은 분야입니다. 시공 업체의 규모와 전문성에 따라 인건비가 달라집니다. <span class="highlight">저렴한 리모델링</span>을 원한다면 인테리어 업체 대신 개별 공정을 직접 계약하는 <span class="highlight">반셀프 리모델링</span>을 고려할 수 있지만, 전체 공정 관리의 어려움이 있습니다. 전문 업체에 맡길 경우, 시공 전문성과 A/S 보장을 받을 수 있는 대신 비용이 상승합니다.</p>
+    <p>우리나라의 주거 특성상 지역별 노후 주택의 비중과 주요 아파트 단지의 분포 형태에 따라 현장 여건과 운반비, 기술자 수급 단가 등이 상이하게 작용합니다. 전국 30대 주요 지방자치단체 및 수도권 주요 도시의 평균적인 32평형 아파트 기준 전체 리모델링 예상 금액을 아래의 가격 지표와 상세 비교 분석 테이블을 통해 안내해 드립니다.</p>
 
-      <h3>4. 철거 및 폐기물 처리 비용</h3>
-      <p>기존 마감재를 철거하고 폐기물을 처리하는 비용은 리모델링 견적에 포함되는 필수 항목입니다. 특히 오래된 주택의 경우 철거 범위가 넓고 폐기물 양이 많아 비용이 증가할 수 있습니다. 2026년 기준 폐기물 처리 비용은 지역 및 물가 상승에 따라 지속적으로 증가하고 있습니다.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>시공 지역</th>
+          <th>실속형 평균 비용 (만 원)</th>
+          <th>고급형 평균 비용 (만 원)</th>
+          <th>지역별 주요 시공 변수 및 특징</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>서울</td>
+          <td>4,200 ~ 4,800</td>
+          <td>7,000 ~ 9,000 이상</td>
+          <td>고가 자재 선호도가 높으며 사다리차 및 폐기물 처리비가 타 지역 대비 비쌈</td>
+        </tr>
+        <tr>
+          <td>부산</td>
+          <td>3,900 ~ 4,500</td>
+          <td>6,500 ~ 8,000</td>
+          <td>해안가 주상복합의 경우 윈도우 시트 및 창호 보강 관련 특수 비용 발생</td>
+        </tr>
+        <tr>
+          <td>대구</td>
+          <td>3,800 ~ 4,300</td>
+          <td>6,200 ~ 7,800</td>
+          <td>구도심 단독주택의 개보수 수요가 많아 골조 보강 비용이 추가되는 경향</td>
+        </tr>
+        <tr>
+          <td>인천</td>
+          <td>3,900 ~ 4,400</td>
+          <td>6,300 ~ 8,000</td>
+          <td>송도 등 신도시의 고급 인테리어 수요와 구도심 아파트의 노후 설비 교체 대조</td>
+        </tr>
+        <tr>
+          <td>광주</td>
+          <td>3,700 ~ 4,200</td>
+          <td>6,000 ~ 7,500</td>
+          <td>지방 중견 시공 업체 간 경쟁이 치열하여 상대적으로 합리적인 견적 제시</td>
+        </tr>
+        <tr>
+          <td>대전</td>
+          <td>3,800 ~ 4,300</td>
+          <td>6,100 ~ 7,600</td>
+          <td>둔산동 등 오래된 대단지 아파트 위주의 보일러 배관 및 단열 공사 필수 포함</td>
+        </tr>
+        <tr>
+          <td>울산</td>
+          <td>3,800 ~ 4,400</td>
+          <td>6,200 ~ 7,700</td>
+          <td>특정 주거 지구 내의 하이엔드 키친 및 수입 욕실 자재 선호도가 뚜렷함</td>
+        </tr>
+        <tr>
+          <td>세종</td>
+          <td>3,900 ~ 4,500</td>
+          <td>6,300 ~ 7,900</td>
+          <td>연식이 길지 않은 단지가 많아 전면 철거보다는 부분 필름과 마감 위주 시공</td>
+        </tr>
+        <tr>
+          <td>수원</td>
+          <td>4,000 ~ 4,600</td>
+          <td>6,400 ~ 8,200</td>
+          <td>역세권 구형 아파트 단지를 중심으로 소음 차단 및 중문 설치 요구가 높은 편</td>
+        </tr>
+        <tr>
+          <td>성남</td>
+          <td>4,200 ~ 4,800</td>
+          <td>6,800 ~ 8,800</td>
+          <td>분당 지역 노후 단지의 리모델링 인허가 절차 및 안전성 검토가 빈번함</td>
+        </tr>
+        <tr>
+          <td>고양</td>
+          <td>3,900 ~ 4,500</td>
+          <td>6,300 ~ 8,100</td>
+          <td>일산 신도시 단지들의 배수관 전면 교체로 인한 기초 비용의 비중이 높음</td>
+        </tr>
+        <tr>
+          <td>용인</td>
+          <td>4,000 ~ 4,600</td>
+          <td>6,400 ~ 8,300</td>
+          <td>대형 평수 주거 비율이 높아 가구 제작 등 맞춤형 인테리어 단가가 높은 지역</td>
+        </tr>
+        <tr>
+          <td>부천</td>
+          <td>3,800 ~ 4,400</td>
+          <td>6,100 ~ 7,800</td>
+          <td>도심 밀집도가 높아 공사 시 소음 민원 해결을 위한 사전 보양비 비중 상승</td>
+        </tr>
+        <tr>
+          <td>안산</td>
+          <td>3,800 ~ 4,300</td>
+          <td>6,000 ~ 7,700</td>
+          <td>실용적인 공간 재구성 중심의 가성비 자재 패키지 시공 계약률이 높은 수준</td>
+        </tr>
+        <tr>
+          <td>남양주</td>
+          <td>3,900 ~ 4,400</td>
+          <td>6,200 ~ 7,900</td>
+          <td>신축 다산 및 별내 지구는 시스템 가구 배치와 포인트 조명 시공 중심</td>
+        </tr>
+        <tr>
+          <td>안양</td>
+          <td>3,900 ~ 4,500</td>
+          <td>6,300 ~ 8,100</td>
+          <td>평촌 노후 아파트의 누수 방지 공사와 단열 창호 공정이 전체 비용의 핵심</td>
+        </tr>
+        <tr>
+          <td>화성</td>
+          <td>4,000 ~ 4,600</td>
+          <td>6,500 ~ 8,200</td>
+          <td>동탄 신도시의 젊은 층 수요가 많아 무몰딩, 무문선 등 미니멀 디자인 선호</td>
+        </tr>
+        <tr>
+          <td>평택</td>
+          <td>3,800 ~ 4,300</td>
+          <td>6,000 ~ 7,600</td>
+          <td>외곽 지역 시공 시 자재 운송 및 장비 진입 관련 추가비용 사전 확인 요망</td>
+        </tr>
+        <tr>
+          <td>의정부</td>
+          <td>3,700 ~ 4,300</td>
+          <td>5,900 ~ 7,500</td>
+          <td>지역 자영업 형태의 오래된 로컬 업체들의 밀착형 사후 관리 장점 부각</td>
+        </tr>
+        <tr>
+          <td>시흥</td>
+          <td>3,800 ~ 4,300</td>
+          <td>6,000 ~ 7,700</td>
+          <td>비교적 최근 준공된 단지의 필름 래핑과 조명 제어 등 부분 리뉴얼이 대세</td>
+        </tr>
+        <tr>
+          <td>김포</td>
+          <td>3,800 ~ 4,400</td>
+          <td>6,100 ~ 7,800</td>
+          <td>한강신도시 중심의 무광 인조대리석 및 유럽형 주방 가구 레이아웃 선호</td>
+        </tr>
+        <tr>
+          <td>광명</td>
+          <td>4,000 ~ 4,500</td>
+          <td>6,300 ~ 8,000</td>
+          <td>재건축 및 재개발 대기 구역 외의 실거주 목적 단기 개보수 위주의 가격 형성</td>
+        </tr>
+        <tr>
+          <td>군포</td>
+          <td>3,800 ~ 4,300</td>
+          <td>6,100 ~ 7,700</td>
+          <td>산본 신도시의 노후 하수관 점검과 층간 소음 방지 차음재 보강 수요 존재</td>
+        </tr>
+        <tr>
+          <td>하남</td>
+          <td>4,000 ~ 4,600</td>
+          <td>6,400 ~ 8,300</td>
+          <td>미사강변 단지 중심의 친환경 도료 및 고사양 타일 시공 비중이 높은 편</td>
+        </tr>
+        <tr>
+          <td>오산</td>
+          <td>3,700 ~ 4,200</td>
+          <td>5,900 ~ 7,500</td>
+          <td>실용성에 초점을 둔 중소형 평형대의 모던 내추럴 마감 패키지가 인기</td>
+        </tr>
+        <tr>
+          <td>이천</td>
+          <td>3,700 ~ 4,300</td>
+          <td>5,800 ~ 7,600</td>
+          <td>지방 자재 물류 거점을 활용하여 마루 및 도기류 수급 단가를 낮추는 특징</td>
+        </tr>
+        <tr>
+          <td>안성</td>
+          <td>3,600 ~ 4,200</td>
+          <td>5,700 ~ 7,400</td>
+          <td>단독 주택 및 전원 주택의 외벽 단열 공사 결합형 견적 요청이 주류를 이룸</td>
+        </tr>
+        <tr>
+          <td>의왕</td>
+          <td>3,900 ~ 4,400</td>
+          <td>6,200 ~ 7,900</td>
+          <td>백운호수 인근 중대형 단지의 테라스 마감 및 친환경 원목 자재 선호도가 큼</td>
+        </tr>
+        <tr>
+          <td>양주</td>
+          <td>3,700 ~ 4,200</td>
+          <td>5,800 ~ 7,500</td>
+          <td>옥정지구 중심의 미니멀 평형에 맞는 커스텀 수납장 설계 위주의 견적 강세</td>
+        </tr>
+        <tr>
+          <td>여주</td>
+          <td>3,600 ~ 4,100</td>
+          <td>5,600 ~ 7,300</td>
+          <td>지역 기반 중소 시공 기술자들의 직접 시공 비율이 높아 기본 마진율이 낮음</td>
+        </tr>
+        <tr>
+          <td>포천</td>
+          <td>3,600 ~ 4,100</td>
+          <td>5,500 ~ 7,200</td>
+          <td>동절기 기온 저하로 인한 양생 기간 연장에 따른 공기 지연 추가비용 체크 요망</td>
+        </tr>
+        <tr>
+          <td>동두천</td>
+          <td>3,500 ~ 4,000</td>
+          <td>5,400 ~ 7,100</td>
+          <td>단순 도배 및 장판, 전등 교체 위주의 급속 부분 수리 형태가 다수 발생</td>
+        </tr>
+      </tbody>
+    </table>
 
-      <h3>5. 지역별 인건비 및 물가 차이: 전국 리모델링 비용 비교</h3>
-      <p>인건비와 물가는 지역별로 차이가 납니다. <span class="highlight">서울, 경기, 인천</span> 등 수도권 지역과 <span class="highlight">부산, 대구, 광주, 대전</span> 등 광역시의 인건비가 지방 소도시보다 높은 경향이 있습니다. <span class="highlight">리모델링 순위 비교</span> 시 지역별 평균 비용 차이를 염두에 두어야 합니다. 예를 들어, 동일 평수라도 <span class="highlight">강남구</span>와 <span class="highlight">평택시</span>의 리모델링 견적은 인건비와 자재 유통 마진에 따라 차이가 발생할 수 있습니다.</p>
+    <div class="highlight">
+      <span class="highlight-title">지역별 자재 수급과 기술자 공급망의 상관관계</span>
+      수도권에 집중된 수입 자재 창고와 종합 디자인 오피스들의 분포로 인해, 대도심권과 원거리 외곽 지역 간의 현장 감리비 및 폐기물 수거 비용 격차는 약 10퍼센트 수준의 직접적인 견적 격차를 유발하는 요인이 됩니다.
+    </div>
 
-      <!-- 전국 지역별 키워드 삽입 (30개 이상) -->
-      <p>전국 주요 도시 리모델링 <span class="highlight">예상 금액</span> 비교: 서울(강남, 송파, 서초), 경기(수원, 용인, 성남, 고양, 화성, 부천, 남양주, 평택), 인천(송도, 청라), 부산(해운대, 수영, 동래), 대구(수성구, 달서구), 광주(상무지구), 대전(유성구), 울산(남구), 세종, 강원(춘천, 원주, 강릉), 충북(청주, 충주), 충남(천안, 아산), 전북(전주, 군산), 전남(목포, 여수, 순천), 경북(포항, 구미), 경남(창원, 김해, 양산), 제주. 각 지역별로 인건비, 자재 수급 용이성, 공사 난이도 등에 따라 <span class="highlight">리모델링 비용의 장단점</span>이 존재합니다.</p>
-    </section>
+    <h2 id="section3">3. 전문 업체 비교를 통한 저렴한곳 탐색법</h2>
 
-    <section id="cost-guide">
-      <span id="cost-guide-anchor" class="anchor"></span>
-      <h2>2026년 리모델링 비용 상세 가이드: 평수별, 공간별 평균 금액</h2>
-      <p>리모델링을 계획할 때 가장 궁금한 것은 <span class="highlight">얼마나 드는지</span>입니다. 다음은 2026년 기준 20평대, 30평대 아파트 리모델링 <span class="highlight">평균 비용</span>과 공간별 <span class="highlight">견적</span> 예시를 통해 <span class="highlight">내돈내산</span> 후기를 참고할 때 유의해야 할 점을 설명합니다.</p>
+    <p>견적이 저렴한곳 혹은 단가가 아주 싼곳을 단순히 인터넷 포털에서 무작위로 수집된 결과만을 바탕으로 결정하는 것은 하자 발생의 지름길입니다. 진정으로 가격이 합리적이면서도 완성도가 우수한 전문 업체를 선별하기 위해서는 다각적인 비교 검증 체계를 가동해야 합니다. 가장 기본이 되는 기준은 상세 내역서의 확보입니다. 가구당 창호의 두께, 바닥 강마루의 브랜드명, 욕실 타일의 규격과 친환경 접착제 사용 여부 등이 조목조목 작성된 견적서를 각 업체로부터 수령하여 횡적으로 대조해야 비로소 실제 적용된 단가의 장단점이 뚜렷하게 보이기 시작합니다.</p>
 
-      <h3>1. 평수별 아파트 전체 리모델링 예상 비용 (2026년 기준)</h3>
-      <table border="1">
-        <thead>
-          <tr>
-            <th>평수</th>
-            <th>공사 유형</th>
-            <th>예상 금액 (중급 자재 기준)</th>
-            <th>공사 범위</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>20평대 (20~29평)</strong></td>
-            <td>부분 리모델링</td>
-            <td>1,000만 원 ~ 2,000만 원</td>
-            <td>주방/욕실 1개소, 벽지, 바닥재 교체 등</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>전체 리모델링</td>
-            <td>2,500만 원 ~ 4,000만 원</td>
-            <td>전체 철거, 목공, 창호, 주방, 욕실 1개, 도배, 마루 등</td>
-          </tr>
-          <tr>
-            <td><strong>30평대 (30~39평)</strong></td>
-            <td>부분 리모델링</td>
-            <td>1,500만 원 ~ 3,000만 원</td>
-            <td>주방/욕실 2개소, 벽지, 바닥재 교체 등</td>
-          </tr>
-          <tr>
-            <td></td>
-            <td>전체 리모델링</td>
-            <td>4,000만 원 ~ 6,000만 원</td>
-            <td>전체 철거, 목공, 창호, 주방, 욕실 2개, 도배, 마루 등</td>
-          </tr>
-          <tr>
-            <td><strong>40평대 이상</strong></td>
-            <td>전체 리모델링</td>
-            <td>6,000만 원 ~ 1억 원 이상</td>
-            <td>규모에 따른 맞춤형 견적 필요</td>
-          </tr>
-        </tbody>
-      </table>
-      <p class="image-caption">※ 위 금액은 2026년 시장 평균 견적이며, 자재 등급과 현장 상황에 따라 20~30% 변동될 수 있습니다.</p>
+    <div class="graph-container">
+      <div class="graph-item">
+        <div class="label">
+          <span>평균적인 리모델링 비용 항목 비율: 자재비 및 가구비</span>
+          <span>45%</span>
+        </div>
+        <div class="bar-wrapper">
+          <div class="bar" style="width: 45%;"></div>
+        </div>
+      </div>
+      <div class="graph-item">
+        <div class="label">
+          <span>목공, 도배, 전기 등 현장 숙련 기술자 인건비</span>
+          <span>35%</span>
+        </div>
+        <div class="bar-wrapper">
+          <div class="bar green" style="width: 35%;"></div>
+        </div>
+      </div>
+      <div class="graph-item">
+        <div class="label">
+          <span>기업 이윤, 설계 디자인 비용 및 예비 감리비</span>
+          <span>15%</span>
+        </div>
+        <div class="bar-wrapper">
+          <div class="bar" style="width: 15%;"></div>
+        </div>
+      </div>
+      <div class="graph-item">
+        <div class="label">
+          <span>공사 중 발생 폐기물 처리비 및 부자재 소모품비</span>
+          <span>5%</span>
+        </div>
+        <div class="bar-wrapper">
+          <div class="bar green" style="width: 5%;"></div>
+        </div>
+      </div>
+    </div>
 
-      <h3>2. 공간별 리모델링 비용 상세 분석</h3>
-      <p>공간별 <span class="highlight">리모델링 견적</span>을 세부적으로 살펴보면, 공사 금액이 어떤 부분에 집중되는지 확인할 수 있습니다.</p>
-      <ul>
-        <li><strong>주방 리모델링 (평균 500만 원 ~ 1,500만 원):</strong> 주방가구(싱크대)가 가장 큰 비중을 차지합니다. 상판 재질(인조대리석 vs 엔지니어드 스톤), 수납장 재질(PET vs UV 하이그로시), 가전제품 옵션 등에 따라 비용 차이가 큽니다.</li>
-        <li><strong>욕실 리모델링 (개당 평균 300만 원 ~ 500만 원):</strong> 타일 교체, 위생 도기(변기, 세면대) 교체, 방수 작업 등이 포함됩니다. <span class="highlight">저렴한 리모델링</span>을 원할 경우 덧방 시공을, 고급 시공을 원할 경우 전체 철거 후 재시공을 합니다.</li>
-        <li><strong>바닥재 및 벽지 교체 (평당 평균 5만 원 ~ 15만 원):</strong> 바닥재는 장판, 강마루, 강화마루, 원목마루 등 종류가 다양합니다. 벽지는 합지(저렴)와 실크(고가) 벽지로 나뉘며, <span class="highlight">리모델링 금액</span>을 크게 좌우합니다.</li>
-      </ul>
+    <p>인테리어 계약을 맺기 전, 반드시 해당 회사의 신뢰도를 공적으로 검증할 필요가 있습니다. 국토교통부의 실내건축공사업 면허 등록 여부를 조회하는 것은 기본 중의 기본입니다. 시공 총예산이 1,500만 원 이상일 경우에는 건설산업기본법에 따라 전문 건설업 면허가 있는 사업자만 적법하게 계약을 체결할 수 있습니다. 면허가 없는 미등록 업체에서 무면허 시공을 가입 및 진행할 경우, 부실 공사로 인한 크랙이나 누수 피해가 발생하더라도 법적인 구제를 받기 어려우며 하자 보증 이행 상품권이나 현금 보상 혜택을 청구할 창구가 전무하다는 결정적인 단점이 존재합니다.</p>
 
-      <h3>3. 합리적인 견적을 위한 비교 팁</h3>
-      <p>성공적인 리모델링은 합리적인 <span class="highlight">견적 비교</span>에서 시작됩니다. 여러 업체의 견적서를 받고 <span class="highlight">내돈내산 후기</span>를 참고하여 <span class="highlight">리모델링 순위</span>를 파악해야 합니다. 견적 비교 시에는 단순히 최종 <span class="highlight">금액</span>만 볼 것이 아니라, 자재의 등급과 A/S 보장 여부, 공사 기간 등을 꼼꼼히 확인해야 합니다. <span class="highlight">리모델링 추천</span> 업체 선정 시, 포트폴리오와 실제 고객 <span class="highlight">후기</span>를 확인하고 <span class="highlight">장단점</span>을 비교해야 합니다.</p>
+    <h2 id="section4">4. 인터넷 플랫폼 및 정보 활용의 장단점</h2>
 
-      <!-- 외부 사이트 링크 삽입 -->
-      <p class="info-box"><strong>참고 자료:</strong> 리모델링 관련 법규 및 정책은 지속적으로 업데이트됩니다. 보다 자세한 건축법 및 주거 환경 관련 정보는 <a href="https://www.law.go.kr/LSW/main.html" target="_blank">국가법령정보센터</a>(건축법) 또는 <a href="https://www.lh.or.kr/" target="_blank">한국토지주택공사</a>(LH) 등의 공신력 있는 기관에서 확인할 수 있습니다.</p>
-    </section>
+    <p>요즈음 리모델링 정보를 획득하는 가장 간편한 방식은 모바일 애플리케이션이나 종합 비교 중개 플랫폼을 이용하는 것입니다. 다양한 비교 사이트를 통하면 한 번의 정보 입력으로 다수의 견적을 받아볼 수 있고, 신규 가입 혜택으로 인테리어 스타일북 사은품 증정이나 에어컨 시공 할인권, 장기 카드 무이자 할부와 같은 다채로운 이벤트를 누릴 수 있습니다. 심지어 계약 시 보증금을 플랫폼에서 예치해주는 안전거래 지원금 구조나 일부 현금지원 보장 프로모션을 적극 활용하여 실질적인 소비 지출을 경감하기도 합니다.</p>
 
-    <section id="checklist">
-      <span id="checklist-anchor" class="anchor"></span>
-      <h2>성공적인 리모델링을 위한 시공 전 필수 체크리스트</h2>
-      <p>리모델링을 시작하기 전에 철저한 준비는 필수입니다. <span class="highlight">리모델링 체크리스트</span>를 통해 예상치 못한 문제 발생을 최소화하고 <span class="highlight">저렴한 리모델링</span>을 실현할 수 있습니다. 다음은 <span class="highlight">내돈내산 후기</span>에서 가장 많이 언급되는 핵심 체크 사항입니다.</p>
+    <p>하지만 이러한 중개 방식에는 명확한 단점도 혼재합니다. 중개 플랫폼이 중소 파트너들로부터 수취하는 수수료가 대략 5퍼센트에서 10퍼센트 수준으로 시공 원가에 고스란히 반영되어, 최종 견적 금액이 개별 로컬 사업자와 직접 접촉하는 것보다 오히려 높아지는 차이점이 발생할 수 있습니다. 또한 소비자가 세부적인 디테일을 조율하기 위해 플랫폼 내의 소통 채널에 의존할 때 피드백이 다소 더뎌지거나, 분쟁 발생 시 책임 소재 규명이 불투명해질 위험성이 늘 도사리고 있습니다.</p>
 
-      <h3>1. 예산 설정 및 우선순위 정하기</h3>
-      <p>리모델링 비용의 10% 정도는 예비 비용으로 남겨두는 것이 좋습니다. 철거 후 발생하는 예상치 못한 문제(누수, 곰팡이 등)에 대처할 수 있습니다. 자재 선택 시 <span class="highlight">장점과 단점</span>을 비교하여 <span class="highlight">리모델링 견적</span>을 조정하세요. 주방이나 욕실처럼 자주 바꾸기 어려운 공간에 우선순위를 두는 것이 현명합니다.</p>
+    <p>이러한 한계를 극복하고자 최근 똑똑한 소비층들은 다양한 인터넷 정보 공간을 넘나들며 집단 지성을 동원합니다. 대표적으로 네이버 검색이나 구글 검색을 통한 브랜드 평판 분석 외에도, 유튜브 시공 영상이나 인스타그램, 페이스북, 트위터 같은 소셜 미디어 포트폴리오를 실시간으로 교차 관찰합니다. 더 나아가 국내의 대형 커뮤니티인 디시인사이드 인테리어 갤러리나 자동차 동호회 성격의 보배드림, 젊은 층 위주의 에펨코리아(펨코) 인테리어 게시판 등에서 가감 없는 날것 그대로의 하자와 사후 처리 관련 내돈내산 후기들을 탐독하며 숨겨진 부실 업체를 걸러내고 있습니다.</p>
 
-      <h3>2. 아파트 리모델링 시 주의사항: 관리사무소 협의</h3>
-      <p>아파트 리모델링 시에는 반드시 관리사무소에 신고하고 입주민 동의를 받아야 합니다. 특히 소음이 심한 철거 및 공사는 정해진 시간에만 진행 가능합니다. 주말 공사 가능 여부, 엘리베이터 보양 및 사용료 등도 미리 확인해야 합니다.</p>
+    <p>뿐만 아니라 미래 지향적인 정보 수집 방식의 하나로, 정보 기술에 민감한 세대들은 인공지능 도구인 제미나이(Gemini)나 챗지피티(ChatGPT), 혹은 오픈AI의 선진화된 언어 모델을 활용하여 자신이 도출한 세부 견적 단가가 타당한지 코딩을 통해 데이터 검증을 시도하거나, 인근 도매상의 자재 소매 단가 데이터베이스를 AI로 매핑하여 스스로 단가 협상의 우위에 서는 지혜를 발휘하고 있습니다.</p>
 
-      <h3>3. 시공 업체 선정 및 계약: "가입 및 순위" 비교</h3>
-      <p>업체 선정 시 <span class="highlight">리모델링 순위 비교</span> 플랫폼이나 <span class="highlight">내돈내산 후기</span>를 참고하여 3~4곳의 견적을 비교하는 것이 좋습니다. 계약서에는 공사 범위, 자재 목록, 기간, 추가 비용 발생 조건, A/S 기간 등을 명확하게 명시해야 합니다. 구두 계약은 분쟁의 원인이 됩니다.</p>
+    <h2 id="section5">5. 시뮬레이터를 통한 예상 견적 계산기</h2>
 
-      <h3>4. 인테리어 디자인 및 컨셉 명확화</h3>
-      <p>원하는 인테리어 컨셉을 명확하게 설정하고 레퍼런스 이미지(사진)를 준비하면 업체와의 소통이 수월해집니다. 이를 통해 불필요한 공사나 디자인 변경을 줄여 <span class="highlight">리모델링 금액</span>을 절감할 수 있습니다.</p>
+    <p>시장의 다양한 조건값을 종합적으로 고려하여 자신이 생각하는 시공 범위에 근거한 대략적인 총비용을 모의 산출할 수 있도록 제작된 시뮬레이터입니다. 아래의 각 입력 항목에 자신의 계획을 반영한 값을 선택하고 결과 출력 버튼을 클릭하시면, 종합적인 예상 소요 견적이 하단에 즉각 산출되어 집계됩니다.</p>
 
-      <div class="info-box">
-        <h4><span class="highlight">리모델링 장점과 단점</span> 비교</h4>
-        <p><strong>장점:</strong> 건물의 가치 상승, 주거 환경 개선, 에너지 효율 향상, 원하는 디자인 구현 가능. <br /><strong>단점:</strong> 초기 비용 부담, 공사 기간 동안 거주 어려움, 예상치 못한 추가 비용 발생 가능성, 업체 선정의 어려움.</p>
+    <div class="form-section">
+      <h3>종합 리모델링 예산 사전 시뮬레이터</h3>
+      <p>실제 자재 마감 등급 및 평형 정보를 바탕으로 추정되는 대략적인 예산을 가산출해 드립니다.</p>
+      
+      <div class="form-group">
+        <label for="calc_area">주거 전용 면적 입력 (평형 기준):</label>
+        <input type="number" id="calc_area" min="5" max="150" placeholder="예: 32" required>
       </div>
 
-      <!-- 외부 사이트 링크 삽입 -->
-      <p class="info-box"><strong>참고 자료:</strong> 인테리어 및 리모델링의 개념, 자재 종류 등에 대한 자세한 정보는 <a href="https://namu.wiki/w/%EC%9D%B8%ED%85%8C%EB%A6%AC%EC%96%B4" target="_blank">나무위키</a>나 <a href="https://terms.naver.com/entry.naver?docId=1080183&cid=40942&categoryId=32107" target="_blank">네이버 지식백과</a> 등을 참고할 수 있습니다.</p>
-    </section>
-
-    <section id="faq">
-      <span id="faq-anchor" class="anchor"></span>
-      <h2>자주 묻는 질문 (FAQ)</h2>
-      <dl>
-        <dt>Q1: <span class="highlight">리모델링 비용</span>이 예상보다 늘어나는 주된 이유는 무엇인가요?</dt>
-        <dd>A: 철거 후 발견되는 문제(누수, 배관 부식 등)가 가장 큰 원인입니다. 또한, 시공 중 고객의 디자인 변경 요청, 추가 옵션(간접 조명, 특수 가구 등) 추가, 자재 등급 상향 등으로 인해 <span class="highlight">리모델링 견적 금액</span>이 증가하는 경우가 많습니다. <span class="highlight">내돈내산 후기</span>를 보면 예상 비용의 10~20%가 추가되는 것이 일반적입니다.</dd>
-
-        <dt>Q2: <span class="highlight">저렴한 리모델링</span>을 위해 <span class="highlight">반포장 리모델링</span>(반셀프)을 추천하나요?</dt>
-        <dd>A: 반셀프는 <span class="highlight">리모델링 금액</span>을 20~30% 절감할 수 있는 <span class="highlight">장점</span>이 있지만, 시공 경험이 없는 분들에게는 추천하지 않습니다. 각 공정별 일정 조율, 자재 수급, 하자 발생 시 책임 소재 분쟁 등 <span class="highlight">단점</span>이 명확합니다. <span class="highlight">리모델링 추천</span> 업체에 맡기는 것이 시간과 스트레스를 줄일 수 있습니다.</dd>
-
-        <dt>Q3: <span class="highlight">리모델링 순위 비교</span> 플랫폼에서 <span class="highlight">추천</span>하는 업체를 믿을 수 있나요?</dt>
-        <dd>A: 플랫폼의 순위는 광고비나 고객 만족도 평점, 시공 건수 등을 기준으로 산정됩니다. <span class="highlight">리모델링 순위</span>가 높다고 해서 무조건 <span class="highlight">싼곳</span>은 아니며, 반드시 <span class="highlight">내돈내산 후기</span>와 직접 상담을 통해 <span class="highlight">장단점</span>을 파악해야 합니다. <span class="highlight">가입</span>된 업체의 사업자등록증과 포트폴리오를 확인하는 것이 중요합니다.</dd>
-
-        <dt>Q4: 아파트 <span class="highlight">리모델링 견적</span>을 받기 위해 <span class="highlight">평균 비용</span> 외에 고려해야 할 사항은?</dt>
-        <dd>A: <span class="highlight">리모델링 예상 비용</span>에는 인건비, 자재비 외에 철거비, 폐기물 처리비, 현장 관리비, 부가세 등이 포함됩니다. 견적서에 모든 항목이 상세히 명시되어 있는지 확인하고, <span class="highlight">리모델링 장단점</span>을 비교하여 최종 업체를 선정해야 합니다.</dd>
-      </dl>
-    </section>
-
-    <section id="contact">
-      <span id="contact-anchor" class="anchor"></span>
-      <h2>전국 리모델링 무료 견적 상담 신청</h2>
-      <p>궁금한 <span class="highlight">리모델링 견적 금액</span>을 지금 바로 확인하세요. <span class="highlight">내돈내산 후기</span>를 바탕으로 <span class="highlight">리모델링 순위</span>가 높은 업체를 비교 추천해드립니다. <span class="highlight">저렴한 리모델링</span>부터 고급 인테리어까지, 당신의 예산에 맞는 최적의 솔루션을 찾아드립니다.</p>
-
-      <form action="/submit" method="POST">
-        <h3>리모델링 견적 문의 양식</h3>
-        <label for="name">이름<span style="color:red;">*</span></label>
-        <input type="text" id="name" name="name" required placeholder="이름을 입력해주세요" />
-
-        <label for="phone">연락처<span style="color:red;">*</span></label>
-        <input type="tel" id="phone" name="phone" required placeholder="010-1234-5678" pattern="[0-9\-]+" />
-
-        <label for="address">현재 거주지 주소<span style="color:red;">*</span></label>
-        <input type="text" id="address" name="address" required placeholder="예: 경기도 평택시 비전동" />
-
-        <label for="building-type">건물 유형<span style="color:red;">*</span></label>
-        <select id="building-type" name="building_type" required>
-          <option value="">선택하세요</option>
-          <option value="아파트">아파트</option>
-          <option value="주택/빌라">주택/빌라</option>
-          <option value="상가/오피스">상가/오피스</option>
-          <option value="기타">기타</option>
+      <div class="form-group">
+        <label for="calc_style">자재 등급 및 시공 마감 선호도 선택:</label>
+        <select id="calc_style">
+          <option value="basic">가성비 실속 마감 패키지 (평당 약 130만 원)</option>
+          <option value="middle">중형 브랜드 기본 마감 패키지 (평당 약 180만 원)</option>
+          <option value="premium">프리미엄 하이엔드 마감 패키지 (평당 약 250만 원)</option>
         </select>
+      </div>
 
-        <label for="remodel-scope">리모델링 범위<span style="color:red;">*</span></label>
-        <select id="remodel-scope" name="remodel_scope" required>
-          <option value="">선택하세요</option>
-          <option value="부분 (주방/욕실)">부분 리모델링 (주방/욕실)</option>
-          <option value="전체 (20평대)">전체 리모델링 (20평대)</option>
-          <option value="전체 (30평대)">전체 리모델링 (30평대)</option>
-          <option value="전체 (40평대 이상)">전체 리모델링 (40평대 이상)</option>
+      <div class="form-group">
+        <label for="calc_ext">발코니 및 확장 공사 여부 선택:</label>
+        <select id="calc_ext">
+          <option value="0">확장 공사 미포함</option>
+          <option value="400">거실 단독 확장 포함 (약 400만 원 가산)</option>
+          <option value="800">거실 및 작은방 전체 확장 포함 (약 800만 원 가산)</option>
         </select>
+      </div>
 
-        <label for="move-date">희망 시공 시기</label>
-        <input type="text" id="move-date" name="move_date" placeholder="예: 2026년 3월 예정" />
-
-        <label for="budget">예상 예산 범위<span style="color:red;">*</span></label>
-        <select id="budget" name="budget" required>
-          <option value="">선택하세요</option>
-          <option value="1000만원 미만">1,000만 원 미만</option>
-          <option value="1000-2000만원">1,000만 원 ~ 2,000만 원</option>
-          <option value="2000-4000만원">2,000만 원 ~ 4,000만 원</option>
-          <option value="4000-6000만원">4,000만 원 ~ 6,000만 원</option>
-          <option value="6000만원 이상">6,000만 원 이상</option>
+      <div class="form-group">
+        <label for="calc_chango">전체 고성능 샷시 및 창호 교체 여부:</label>
+        <select id="calc_chango">
+          <option value="0">기존 창호 재사용 혹은 내부 필름 마감만 진행</option>
+          <option value="600">중소 브랜드 이중창 교체 (약 600만 원 가산)</option>
+          <option value="1200">KCC, LX 등 대기업 브랜드 창호 전체 교체 (약 1200만 원 가산)</option>
         </select>
+      </div>
 
-        <label for="message">추가 요청 사항</label>
-        <textarea id="message" name="message" rows="5" placeholder="리모델링 희망 내용, 특이사항 등을 상세히 입력해주세요. (예: 샷시 포함, 특정 자재 선호)"></textarea>
+      <button type="button" class="cta-button" onclick="runRemodelingCalc()">예상 종합 가격 산출하기</button>
 
-        <button type="submit" class="btn-cta">견적 문의 보내기</button>
-      </form>
-    </section>
-  </main>
+      <div id="calc_result" style="margin-top: 25px; padding: 20px; background-color: #ffffff; border-radius: 6px; border: 1px dashed #1e3d59; display: none;">
+        <span style="font-weight: 700; color: #1e3d59; font-size: 1.15em; display: block; margin-bottom: 10px;">시뮬레이션 예산 예측 보고서</span>
+        <div id="calc_result_text" style="color: #2f3542; font-size: 1.05em; line-height: 1.8;"></div>
+      </div>
+    </div>
+
+    <script>
+      function runRemodelingCalc() {
+        var area = parseFloat(document.getElementById('calc_area').value);
+        var style = document.getElementById('calc_style').value;
+        var extCost = parseFloat(document.getElementById('calc_ext').value);
+        var changoCost = parseFloat(document.getElementById('calc_chango').value);
+
+        if (isNaN(area) || area <= 0) {
+          alert('면적을 평형 기준으로 입력해 주시기 바랍니다.');
+          return;
+        }
+
+        var basePerPyung = 130;
+        var styleName = "가성비 실속";
+        if (style === "middle") {
+          basePerPyung = 180;
+          styleName = "중형 브랜드";
+        } else if (style === "premium") {
+          basePerPyung = 250;
+          styleName = "프리미엄 하이엔드";
+        }
+
+        var baseTotal = area * basePerPyung;
+        var grandTotal = baseTotal + (extCost / 100) + (changoCost / 100);
+
+        var resultText = "선택하신 면적: " + area + "평형<br>" +
+                         "마감 스타일: " + styleName + " 패키지 (평당 기준 " + basePerPyung + "만 원)<br>" +
+                         "기본 패키지 비용: 약 " + baseTotal.toLocaleString() + "만 원<br>" +
+                         "선택 옵션 추가비: 약 " + ((extCost + changoCost) / 100).toLocaleString() + "만 원<br>" +
+                         "<strong>최종 예상 시공 견적: 약 " + Math.round(grandTotal).toLocaleString() + "만 원 선</strong><br><br>" +
+                         "주의: 해당 결과값은 현장의 특수 철거 여부나 엘리베이터 유무 및 소방 설비 보강 비용 등이 감안되지 않은 가상의 기준 금액이므로, 실제 현장 실측을 바탕으로 한 개별 명세서와는 일정 부분 오차가 발생할 수 있습니다.";
+
+        document.getElementById('calc_result_text').innerHTML = resultText;
+        document.getElementById('calc_result').style.display = 'block';
+      }
+    </script>
+
+    <h2 id="section6">6. 커뮤니티 내돈내산 후기 및 FAQ 분석</h2>
+
+    <p>현장의 생생한 목소리를 듣는 것만큼 유효한 위험 예방책은 없습니다. 실제 많은 소비자들이 이른바 디시, 보배드림, 펨코 등의 대형 인터넷 커뮤니티 공간에 기재한 내돈내산 시공 후기와 불만 글들을 모니터링하여 공통으로 관찰되는 쟁점들을 정리해 드립니다.</p>
+
+    <h3>6-1. 자재 바꾸치기와 계약 외 비용 요구의 문제</h3>
+    <p>저렴한곳 혹은 아주 싼곳을 위주로 업체를 비교 선정했던 한 네티즌의 내돈내산 후기에 따르면, 최초 계약 단계에서는 친환경 한샘 혹은 리바트 친환경 마크가 표기된 내부 도어와 보드 자재를 시공하겠다고 약속해놓고, 실제 자재가 상차되어 시공되는 단계에서 라벨이 제거된 출처 불명의 중저가 중소기업 사외품을 교묘히 혼용하여 원가를 절감하려다 적발된 실사례가 있었습니다. 시공 중간에 예비 건축주가 수시로 현장을 방문하여 각 공정의 박스 포장지와 출고 명세서를 직접 점검하는 주체적인 감시 기능이 생략된다면 이와 같은 이면 이익 추구를 원천적으로 막기란 대단히 피곤한 일입니다.</p>
+
+    <h3>6-2. 하자 처리에 관한 신뢰도 불이행 사례</h3>
+    <p>특히 에펨코리아 게시판에서 널리 회자된 사례 중 하나는 싱크대 설치 후 3개월 만에 하부장 실리콘 접합 부위 틈새에서 누수가 발생하여 아래층 세대 천장까지 누수 피해가 확산되었으나, 해당 로컬 무면허 기술자가 연락을 의도적으로 피하고 결국 폐업 신고를 감행하여 피해자가 민사 소송을 고민하게 된 뼈아픈 수기입니다. 시공사의 단순 업력 순위만을 신뢰하기보다는, 서울보증보험 등 국가가 인정한 보증기관을 통한 하자이행보증증권 발급을 의무화하는 특약 조항이 계약서에 공적으로 기재되어 있는지 확인하는 법적 안전장치의 중요성이 다시금 부각되는 대목입니다.</p>
+
+    <h3>6-3. 인테리어 리모델링 다빈도 질문과 명쾌한 답변</h3>
+    <ul>
+      <li>
+        <strong>Q: 무조건 평당 단가가 아주 낮은 싼곳으로 계약하면 무조건 사기를 당하나요?</strong><br>
+        A: 반드시 사기로 이어지는 것은 아니나, 통상적인 자재 조달 원가와 고정 기술 인건비의 최저 한계선 밑으로 계약 단가가 잡혔다면 공사 기간 중간에 불가피하게 자재 사양을 심각하게 낮추거나 악의적인 공사 중단을 인질로 삼아 추가 공사대금 증액을 강요할 우려가 다분합니다.
+      </li>
+      <li>
+        <strong>Q: 견적 비용을 정당하게 할인받기 위해 개별 셀프 인테리어(직영 공사)를 추진하는 것은 어떤가요?</strong><br>
+        A: 개별 직영 공사는 감리비와 대행 마진을 온전히 절감할 수 있다는 뚜렷한 장점이 있는 반면, 목공, 타일, 설비 등의 공정 조율 순서를 완벽히 제어하지 못할 시 공기가 한없이 지연되고 일일 인건비 손실이 누적되어 결과적으로 일반 종합 업체에 위탁하는 비용보다 초과하는 단점이 팽배하므로 깊은 숙련도가 요구됩니다.
+      </li>
+      <li>
+        <strong>Q: 아파트 관리사무소의 인테리어 동의서 대행이나 소음 신고 수수료도 견적에 포함해야 하나요?</strong><br>
+        A: 입주민 사전 동의서 징구 대행 업무는 전문 대행사를 이용할 시 약 20만 원에서 40만 원 수준의 외주 비용이 발생하며, 아파트 엘리베이터 보양 자재 가격과 승강기 사용료 등 관리사무소에 별도로 예치 혹은 지불해야 하는 자금 역시 예산 구성 초기에 숨은 비용으로 감안해 두셔야 갱신 시점의 자금 압박을 완화할 수 있습니다.
+      </li>
+    </ul>
+
+    <h2 id="section7">7. 리모델링 계약 전 체크리스트와 지원금 혜택</h2>
+
+    <p>성공적이고 평온한 리모델링을 종결하기 위해서는 사전에 금전적 피해 예방 절차를 충실히 이행하는 한편, 정부와 각 지자체에서 시민들의 주거 환경 안정을 도모하기 위해 실시하는 각종 조세 혜택과 이자 지원 사업을 유기적으로 연계해야 합니다.</p>
+
+    <h3>7-1. 추가금 폭탄 방지를 위한 계약 특약 설정안</h3>
+    <p>계약 문안을 검토하실 때는 반드시 시공 항목의 추가 및 변경 사항이 서면 합의서로 작성되어 서명 날인되지 않은 상태에서는 상대방이 일방적으로 추가 공사비를 대금으로 요구할 수 없다는 내용을 영구 명시해야 합니다. 공사 마감 일정이 당초 약속된 기한보다 늦어질 경우 일당 총공사금액의 일정 비율을 매일 차감 청구할 수 있도록 지체상금 조항을 촘촘히 보강해 두는 것 역시 시공사의 도덕적 해이를 제어하는 데 실질적인 도움을 줍니다.</p>
+
+    <h3>7-2. 그린리모델링 이자 지원금 및 에너지 효율 혜택 수혜</h3>
+    <p>만약 단열 성능 강화나 친환경 에너지 소비 효율 1등급 보일러 및 창호로 전면 개보수를 기획하시는 상황이라면, 국토교통부와 LH공사에서 시행하는 그린리모델링 창호 이자 지원 사업의 대상 요건을 충족하는지 꼭 검토해 보셔야 합니다. 고가의 고사양 샷시 교체 계약 시 은행 금융 연계 이자 이율의 일부를 국가 보조금 형태로 감면 내지 보전받을 수 있으며, 일부 선진 지자체에서는 거동이 불편한 어르신이나 노후 불량 주택 개량을 위한 주거복지 현금 보조 지원금 혹은 주거 환경 개선 이벤트를 정기적으로 집행하여 뜻밖의 비용 절감 혜택을 선사하기도 합니다.</p>
+
+    <div class="external-links">
+      <p>신뢰성 확보를 위한 외부 관계 기관 리스트:</p>
+      <a href="https://www.molit.go.kr/" target="_blank">국토교통부 (MOLIT)</a>
+      <a href="https://www.lh.or.kr/" target="_blank">한국토지주택공사 (LH)</a>
+      <a href="https://namu.wiki/w/%EB%AA%A8%EB%8D%98%20%EC%9D%B8%ED%85%8C%EB%A6%AC%EC%96%B4" target="_blank">나무위키 - 현대식 인테리어 가이드</a>
+      <a href="https://www.gov.kr/" target="_blank">정부24 민원 및 보조금24 조회 포털</a>
+      <a href="https://www.fsc.go.kr/" target="_blank">금융위원회 하자보증 관련 공시 정보</a>
+    </div>
+
+    <div style="text-align: center; margin-top: 40px;">
+      <a href="https://example.com/remodeling-quote" class="cta-button">2026년 실시간 무료 견적 비교 문의하기</a>
+    </div>
+
+  </div>
 
 
-  
+
+	
 
 
-<!-- [Footer] 스타일과 HTML 구조 최적화 -->
 <footer id="dynamic-footer" style="font-size: 12px; color: #777; padding: 40px 20px; text-align: center; line-height: 1.8; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background-color: #fafafa; border-top: 1px solid #eee;">
   
   <div style="margin-bottom: 12px; font-weight: 500; color: #444;">
-    © <span id="copyright-year">2026</span> <span id="site-title-display">My Website</span>. All rights reserved.
+    © <span id="copyright-year"></span> <span id="site-title-display"></span>. All rights reserved.
   </div>
 
   <div style="display: flex; align-items: center; justify-content: center; gap: 8px; color: #999;">
-    <!-- 실시간 상태 표시등 (시각적 신뢰도 상승) -->
     <span style="display: inline-block; width: 8px; height: 8px; background-color: #2ecc71; border-radius: 50%; box-shadow: 0 0 5px #2ecc71; animation: pulse 2s infinite;"></span>
-    <span id="sync-status" aria-live="polite">시스템 연결 중...</span>
-    <span style="color: #ddd;">|</span>
-    <span>최종 업데이트: <time id="last-update-time" datetime="2026-01-01">2026-01-01</time></span>
+    <span id="sync-status" aria-live="polite">시스템 안정화 운영 중</span>
   </div>
 
   <style>
@@ -430,136 +821,31 @@
 (function() {
   'use strict';
 
-  // 1. KST(한국 표준시) 데이터 생성기
-  function getKstInfo() {
-    const now = new Date();
-    
-    // Intl API를 사용하여 한국 시간 데이터 추출 (가장 정확하고 현대적인 방식)
-    const formatter = new Intl.DateTimeFormat('ko-KR', {
-      timeZone: 'Asia/Seoul',
-      year: 'numeric', month: '2-digit', day: '2-digit',
-      hour: '2-digit', minute: '2-digit', second: '2-digit',
-      hour12: false
-    });
+  // 1. 현재 연도 구하기 (KST 기준 안전하게 추출)
+  const now = new Date();
+  const formatter = new Intl.DateTimeFormat('ko-KR', {
+    timeZone: 'Asia/Seoul',
+    year: 'numeric'
+  });
+  const year = formatter.format(now).replace('년', '').trim();
+  const title = document.title || window.location.hostname;
 
-    const parts = formatter.formatToParts(now).reduce((acc, part) => {
-      acc[part.type] = part.value;
-      return acc;
-    }, {});
+  // 2. UI 업데이트 (정적이고 안전한 정보만 반영)
+  document.getElementById('copyright-year').textContent = year;
+  document.getElementById('site-title-display').textContent = title;
 
-    const year = parts.year;
-    const formattedDate = year + '-' + parts.month + '-' + parts.day;
-    const isoDateTime = year + '-' + parts.month + '-' + parts.day + 'T' + parts.hour + ':' + parts.minute + ':' + parts.second + '+09:00';
-
-    return { year, formattedDate, isoDateTime };
+  // 3. 메타 태그에는 실시간 시간이 아닌 '카피라이트' 정보만 안전하게 주입
+  let metaCopy = document.querySelector('meta[name="copyright"]');
+  if (!metaCopy) {
+    metaCopy = document.createElement('meta');
+    metaCopy.setAttribute('name', 'copyright');
+    document.head.appendChild(metaCopy);
   }
+  metaCopy.content = year + ' ' + title;
 
-  // 2. SEO 메타 태그 및 JSON-LD 일괄 업데이트
-  function updateSeoEngine(data) {
-    const title = document.title || window.location.hostname;
-
-    // 메타 태그 헬퍼 함수
-    const setMeta = (selector, content) => {
-      let el = document.querySelector(selector);
-      if (!el) {
-        el = document.createElement('meta');
-        if (selector.includes('property')) {
-          el.setAttribute('property', selector.split('"')[1]);
-        } else {
-          el.setAttribute('name', selector.split('"')[1]);
-        }
-        document.head.appendChild(el);
-      }
-      el.content = content;
-    };
-
-    // [SEO] 필수 메타 데이터
-    setMeta('property="og:updated_time"', data.isoDateTime);
-    setMeta('property="article:modified_time"', data.isoDateTime);
-    setMeta('name="date"', data.formattedDate);
-    setMeta('name="last-modified"', data.isoDateTime); // 서버 응답 대용
-    setMeta('name="copyright"', data.year + ' ' + title);
-
-    // [SEO] JSON-LD 구조화 데이터 (WebPage + Organization 결합)
-    let ldJsonScript = document.getElementById('seo-json-ld');
-    if (!ldJsonScript) {
-      ldJsonScript = document.createElement('script');
-      ldJsonScript.id = 'seo-json-ld';
-      ldJsonScript.type = 'application/ld+json';
-      document.head.appendChild(ldJsonScript);
-    }
-
-    const jsonLd = {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": "WebPage",
-          "@id": window.location.href,
-          "url": window.location.href,
-          "name": title,
-          "datePublished": data.isoDateTime,
-          "dateModified": data.isoDateTime,
-          "inLanguage": "ko-KR"
-        },
-        {
-          "@type": "Organization",
-          "name": title,
-          "url": window.location.origin,
-          "logo": window.location.origin + "/favicon.ico"
-        }
-      ]
-    };
-    ldJsonScript.textContent = JSON.stringify(jsonLd);
-  }
-
-  // 3. UI 업데이트
-  function updateUi(data) {
-    const title = document.title || window.location.hostname;
-    
-    // 연도 및 제목
-    document.getElementById('copyright-year').textContent = data.year;
-    document.getElementById('site-title-display').textContent = title;
-    
-    // 날짜
-    const timeElem = document.getElementById('last-update-time');
-    timeElem.textContent = data.formattedDate;
-    timeElem.setAttribute('datetime', data.isoDateTime);
-
-    // 상태 메시지 (랜덤 순환)
-    const statusMsgs = [
-         "서비스 최적화 완료", 
-          "데이터베이스 동기화 완료", 
-          "보안 프로토콜 점검 완료",
-          "콘텐츠 최신화 완료",
-          "시스템 점검 완료",
-          "웹표준 레이아웃 최적화",
-          "사용자 인터페이스 안정화",
-          "성능 개선 완료",
-          "새로운 데이터 로드 완료",
-          "운영 시스템 안정화 완료",
-          "인덱싱 최적화 완료",
-          "데이터 무결성 검사 완료", 
-          "캐시 레이어 갱신",
-          "보안 프로토콜 활성화", 
-          "실시간 콘텐츠 동기화"
-    ];
-    document.getElementById('sync-status').textContent = statusMsgs[Math.floor(Math.random() * statusMsgs.length)];
-  }
-
-  // 4. 실행 제어 (DOM 로드 후 실행)
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', () => {
-      const data = getKstInfo();
-      updateUi(data);
-      updateSeoEngine(data);
-    });
-  } else {
-    const data = getKstInfo();
-    updateUi(data);
-    updateSeoEngine(data);
-  }
 })();
 </script>
+
 
 
 
@@ -607,7 +893,7 @@
         initialColorMode = NTVSCS === "0" ? false : NTVSCS === "1" ? prefersDarkSchemeQuery.matches : true;
     }
     document.getElementsByTagName("html")[0].setAttribute("data-dark", initialColorMode ? "true" : "false");
-}setInitialColorMode();})()</script><div id="__next" data-reactroot=""><div role="dialog" aria-modal="true"></div><div role="dialog" aria-live="polite"></div><div id="root" class="wrap"><div id="u_skip"><a href="#content"><span>본문으로 바로가기</span></a></div><header class="Header_header__JAW_Z Header_channel_header__4mguP Header_without_background__UAAeK"><div class="Header_left_wrap__aVIXl"><h1 class="Header_logo_area__dpgTc"><a class="Header_link_navertv__TqTR3" href="/"><svg viewBox="0 0 117 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="117" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="m22.425.5-5.864 14.95h4.958l.712-1.993h5.661l.715 1.992h4.955L27.702.5h-5.277Zm2.637 4.799 1.671 4.67H23.39l1.672-4.67ZM49.58.5v14.95h11.709v-3.737h-6.975V9.718h6.727V6.232h-6.727V4.237h6.975V.5H49.58ZM43.013.5l-3.516 9.83L35.98.5h-4.985l5.864 14.95h5.276L47.998.5h-4.985ZM10.215.5v8.002L4.764.5H0v14.95h4.734V7.447l5.451 8.001h4.764V.5h-4.734ZM70.904 7.477h-2.637V4.242h2.624a1.618 1.618 0 0 1 .013 3.235Zm3.316 2.844.453-.188c1.736-.728 2.62-2.303 2.62-4.298 0-1.887-.687-3.286-2.046-4.154C73.983.872 72.347.5 70.093.5h-6.309v14.95h4.731v-4.236h1.704l2.882 4.235H78l-3.78-5.128ZM111.367.5l-3.514 9.824L104.337.5h-4.982l5.86 14.94h5.273L116.349.5h-4.982ZM88.58.5H84v4.311h4.58V15.5h4.85V4.811h4.581V.5h-9.43Z" fill="currentColor"></path></svg><span class="blind">NAVER TV</span></a></h1><button type="button" aria-expanded="false" aria-haspopup="menu" aria-controls="wa_header_menu" class="Header_button_menu__8f3_9"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 5a1 1 0 0 0 0 2h18a1 1 0 1 0 0-2H3Zm-1 7a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm0 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Z" fill="currentColor"></path></svg><span class="blind">메뉴</span></button></div><div aria-labelledby="wa_header_menu" class="Header_layer_menu__8wMgP "><div class="Header_layer_content__u6ydj"><div id="headerScrollWrap" class="Header_scroll_wrap__tOk4E"><nav class="Header_menu_wrap__J2HC0"><ul role="menu" class="Header_main_menu_list__hat5m"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path clip-rule="evenodd" d="M2 8.725a3 3 0 0 1 1.354-2.508L9.903 1.92a2 2 0 0 1 2.194 0l6.549 4.297A3 3 0 0 1 20 8.725V17.2a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8.725Z" stroke="currentColor" stroke-width="1.5"></path><path d="M11 15.2v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">홈</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/l"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M6.827 5.771c-1.043.951-1.687 2.253-1.687 3.69 0 1.436.644 2.738 1.687 3.688m8.43-7.378c1.044.951 1.688 2.253 1.688 3.69 0 1.436-.644 2.738-1.688 3.688M4.073 3C2.358 4.607 1.3 6.808 1.3 9.236s1.058 4.629 2.773 6.235M17.927 3C19.642 4.607 20.7 6.808 20.7 9.236s-1.058 4.629-2.773 6.235" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><circle cx="10.999" cy="9.236" r="2.021" stroke="currentColor" stroke-width="1.5"></circle><path d="M11.042 11.585v8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">생중계</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/h"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M15.6 10.5L10.2225 6.93922C9.42479 6.41101 8.35999 6.98302 8.35999 7.93976V11" stroke="url(#0000000)" stroke-width="1.5" stroke-linejoin="round"></path><path d="M11.2 19.9999C14.711 19.9999 17.7536 17.6591 19.3177 14.7352C19.7523 13.9227 19.4049 12.9474 18.6316 12.4463L16.4 11" stroke="url(#0000000)" stroke-width="1.5" stroke-linejoin="round"></path><path d="M11.2512 20C10.9414 20 10.635 19.9852 10.333 19.9562C5.65473 19.5078 2 15.6691 2 11C2 6.02944 6.14192 2 11.2512 2C14.7643 2 17.8084 4.32867 19.3717 7.25078C19.8048 8.06052 19.4606 9.03272 18.6921 9.53538L10.2153 15.0796C9.41717 15.6017 8.35844 15.029 8.35844 14.0754V11.5V11" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path><defs><linearGradient id="0000000" x1="13.5" y1="8.5" x2="15.5" y2="10.5" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor" stop-opacity="0"></stop></linearGradient><linearGradient id="0000000" x1="18.5" y1="14" x2="16.5" y2="11" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="Header_text__LA4HP">클립</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/f"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><rect x="2" y="5.5" width="18" height="14" rx="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></rect><path d="M13.326 11.75 10.29 9.727a.7.7 0 0 0-1.089.582v4.05a.7.7 0 0 0 1.089.583l3.037-2.025a.7.7 0 0 0 0-1.165ZM4.5 2.35a.75.75 0 0 1 .75-.75h11.5a.75.75 0 0 1 0 1.5H5.25a.75.75 0 0 1-.75-.75Z" fill="currentColor"></path></svg></span><span class="Header_text__LA4HP">구독</span></a></li></ul><span class="Header_menu_title__pFzEd">My</span><ul role="menu" class="Header_library_menu_list__cAA3v"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/my?tab=recent"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M11 2a9 9 0 1 0 8.37 12.316" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 2a9 9 0 0 1 9 9c0 .667-.3 2.3-.7 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 3"></path><path d="M10.5 6.5v5h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">최근<span class="Header_hidden_reduced__y3kxs"> 본 영상</span></span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/my?tab=liked"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M9.52 4.357A4.626 4.626 0 0 0 6.86 3.5a4.81 4.81 0 0 0-3.45 1.46C2.537 5.854 1.984 6.863 2 8.648c.016 1.745.843 3.002 2.559 4.718a109.862 109.862 0 0 0 5.81 5.074.99.99 0 0 0 1.247 0c2.004-1.618 4.258-3.522 5.81-5.074C19.143 11.65 20 10.467 20 8.647c0-1.386-.555-2.812-1.477-3.713-.903-.884-2.16-1.432-3.614-1.429a4.661 4.661 0 0 0-2.536.918 5.946 5.946 0 0 0-1.397 1.487A5.253 5.253 0 0 0 9.52 4.357Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">좋아요<span class="Header_hidden_reduced__y3kxs"> 한 영상</span></span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/my?tab=saved"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M5.262 18.552 11 13.512l5.72 5.005c.088.072.2.113.316.114a.44.44 0 0 0 .185 0 .448.448 0 0 0 .279-.404V7.773M5.262 18.553a.496.496 0 0 1-.502.078.446.446 0 0 1-.26-.404V3.94c0-.242.208-.439.464-.439h12.072c.123 0 .24.046.328.129a.428.428 0 0 1 .136.31v3.834M5.262 18.553 17.5 7.772" stroke="currentColor" stroke-width="1.4"></path></svg></span><span class="Header_text__LA4HP">나중에<span class="Header_hidden_reduced__y3kxs"> 볼 영상</span></span></a></li></ul><span class="Header_menu_title__pFzEd">탐색</span><ul role="menu" class="Header_genre_menu_list__NbKFm"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/r"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M11.133 14.938v1.837" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 20.068h6.318a.5.5 0 0 0 .5-.5v-.454c0-1.05-.688-1.91-1.527-1.91H8.709c-.84 0-1.528.86-1.528 1.91v.454a.5.5 0 0 0 .5.5H8Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path><path d="M11.001 14.5a6.12 6.12 0 0 1-6.125-6.126V5.75c0-1.933 1.566-3.5 3.5-3.5h5.25a3.5 3.5 0 0 1 3.5 3.5v2.625a6.12 6.12 0 0 1-6.125 6.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.318 11A5.687 5.687 0 0 1 3.17 9.902C2.168 8.986 1.5 7.888 1.5 6.607c0-1.282 1.224-2.289 2.783-2.289h.723a2.919 2.919 0 0 0-.333 1.373v2.746c0 .916.233 1.776.645 2.563ZM16.727 11a5.688 5.688 0 0 0 2.149-1.098c1.002-.915 1.67-2.014 1.67-3.295 0-1.282-1.225-2.288-2.783-2.288h-.724c.223.42.334.887.334 1.373v2.746c0 .915-.234 1.775-.646 2.562Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">TOP100</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/i"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M14.708 5.652h3.444m0 0v3.444m0-3.444-6.59 6.59-3.153-3.151L3 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.667 3.667v13.166c0 1.384 1.117 2.5 2.5 2.5h13.167" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">급상승</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/news"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M16.83 13.875V5.781m0 0V5.5a3 3 0 0 0-3-3H5.5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11.4a3 3 0 0 0 3-3V7.781a2 2 0 0 0-2-2h-1.07Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 6.8h7M6 10h7M6 13.2h4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">뉴스</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/sport"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle><path d="M9.54 2c.5 3.5-2.5 9-7.5 9.5M12.094 20.498c-.4-3.513 2.756-8.925 7.768-9.282" stroke="currentColor" stroke-width="1.3"></path></svg></span><span class="Header_text__LA4HP">스포츠</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/drama"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M5.8 20.5h8M16.8 6v6h1a3 3 0 1 0 0-6h-1ZM16.8 6h-13a1 1 0 0 0-1 1v4a7 7 0 1 0 14 0V6ZM14 1l-1 1.8M10.3 1l-1 1.8M6.5 1l-1 1.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">드라마</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/enter"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle><path d="M15.5 11.5a4.5 4.5 0 1 1-9 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">예능</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/other"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M14.246 6.672 9.424 8.787c-.223.102-.49.368-.591.591L6.668 14.25c-.462 1.01.072 1.544 1.082 1.082l4.872-2.165c.222-.101.488-.368.59-.59l2.116-4.822c.462-1.043-.074-1.544-1.082-1.083Zm-2.4 5.18a1.2 1.2 0 1 1-1.697-1.696 1.2 1.2 0 0 1 1.697 1.696Z" fill="currentColor"></path><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle></svg></span><span class="Header_text__LA4HP">더 많은 영상</span></a></li></ul><span class="Header_menu_title__pFzEd">방송관</span><ul role="menu" class="Header_brand_menu_list__gdj5a"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/tvchosun"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand tvchosun"><path d="M11.669 5.9H3.346C2.603 5.9 2 6.472 2 7.177v7.893c0 .705.603 1.277 1.346 1.277h8.323c.744 0 1.346-.572 1.346-1.277V7.177c0-.705-.602-1.277-1.346-1.277Z" fill="url(#icon_tvlogo_tvchosun_h22_svg__a)"></path><path d="M3.34 11.593c-.57 1.968.98 3.593 3.451 3.593 2.473 0 4.994-1.579 5.612-3.546h-2.215l-.257.336c-.14.198-.318.378-.514.528a5.036 5.036 0 0 1-3.14 1.248c-1.854.047-3.035-1.102-2.625-2.588.129-.453.373-.865.722-1.196A4.589 4.589 0 0 0 3.346 11.6" fill="#fff"></path><path d="m4.943 9.3-.269.291a2.69 2.69 0 0 0-.753 1.219c-.428 1.509.808 2.681 2.748 2.635 1.23-.047 2.399-.5 3.286-1.265a3.695 3.695 0 0 1-2.423.928c-1.456 0-2.264-.928-1.885-2.095.453-1.074 1.5-1.851 2.748-2.049l.428-1.317a7.204 7.204 0 0 0-3.88 1.66" fill="url(#icon_tvlogo_tvchosun_h22_svg__b)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.599 6.48 21.16 9.54 19.93 6.48h-5.079v.5h1.591v3.563h1.028V6.98h1.64l1.488 3.563h.77l2.05-4.063h-.82Zm-3.562 4.84h.098l-.294.79h-.098a2.39 2.39 0 0 0-1.169-.342c-.973 0-1.511.737-1.511 1.92 0 1.185.538 1.875 1.511 1.875.423-.035.839-.15 1.218-.342h.147v.836c0 .011 0 .023-.012.034-.012.012-.025.012-.037.012-.428.14-.869.226-1.316.244-1.7 0-2.723-1.33-2.723-2.612 0-1.283.973-2.612 2.821-2.612.465.006.924.093 1.365.244v-.046Zm3.874 1.904v-2.1h1.12v5.223h-1.12V13.99h-2.044v2.357h-1.12v-5.224h1.12v2.101h2.044Zm4.51-2.1a2.834 2.834 0 0 0-1.983.748 2.464 2.464 0 0 0-.795 1.863c-.012.696.275 1.37.795 1.863a2.81 2.81 0 0 0 1.983.748c1.512-.029 2.73-1.19 2.73-2.611a2.41 2.41 0 0 0-.765-1.857 2.775 2.775 0 0 0-1.965-.755Zm.055 4.532c-1.205 0-1.517-1.381-1.517-2.17 0-.79.367-1.678 1.364-1.678.998 0 1.518 1.33 1.518 2.118 0 .79-.367 1.724-1.365 1.724v.006Zm5.226-4.486h.055v-.052c.46-.006.918.046 1.365.145l-.312.876a2.668 2.668 0 0 0-1.102-.29c-.477 0-.79.197-.79.54 0 .342.264.487.943.73l.05.019c.673.24 1.523.544 1.523 1.688 0 1.172-1.206 1.515-1.94 1.515a7.705 7.705 0 0 1-1.628-.244c0-.023-.055-.046-.055-.046v-.877h.104c.478.227.992.36 1.524.39.477 0 .79-.053.79-.54 0-.488-.319-.633-.998-.877-.68-.244-1.469-.685-1.469-1.561 0-.876.735-1.416 1.94-1.416Zm5.74 2.867c.043.394-.06.79-.293 1.103-.245.22-.563.33-.888.301-.985 0-1.034-.551-1.034-1.456v-2.862h-1.181v2.966c0 .952 0 2.258 2.117 2.258 2.118 0 2.167-.755 2.167-2.258v-2.966h-.888v2.914Zm5.006.418v-3.332h.777v5.224H43.4l-2.631-3.587v3.587h-.826v-5.224h1.022l2.484 3.332Z" fill="#575756"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.599 6.48 21.16 9.54 19.93 6.48h-5.079v.5h1.591v3.563h1.028V6.98h1.64l1.488 3.563h.77l2.05-4.063h-.82Zm-3.562 4.84h.098l-.294.79h-.098a2.39 2.39 0 0 0-1.169-.342c-.973 0-1.511.737-1.511 1.92 0 1.185.538 1.875 1.511 1.875.423-.035.839-.15 1.218-.342h.147v.836c0 .011 0 .023-.012.034-.012.012-.025.012-.037.012-.428.14-.869.226-1.316.244-1.7 0-2.723-1.33-2.723-2.612 0-1.283.973-2.612 2.821-2.612.465.006.924.093 1.365.244v-.046Zm3.874 1.904v-2.1h1.12v5.223h-1.12V13.99h-2.044v2.357h-1.12v-5.224h1.12v2.101h2.044Zm4.51-2.1a2.834 2.834 0 0 0-1.983.748 2.464 2.464 0 0 0-.795 1.863c-.012.696.275 1.37.795 1.863a2.81 2.81 0 0 0 1.983.748c1.512-.029 2.73-1.19 2.73-2.611a2.41 2.41 0 0 0-.765-1.857 2.775 2.775 0 0 0-1.965-.755Zm.055 4.532c-1.205 0-1.517-1.381-1.517-2.17 0-.79.367-1.678 1.364-1.678.998 0 1.518 1.33 1.518 2.118 0 .79-.367 1.724-1.365 1.724v.006Zm5.226-4.486h.055v-.052c.46-.006.918.046 1.365.145l-.312.876a2.668 2.668 0 0 0-1.102-.29c-.477 0-.79.197-.79.54 0 .342.264.487.943.73l.05.019c.673.24 1.523.544 1.523 1.688 0 1.172-1.206 1.515-1.94 1.515a7.705 7.705 0 0 1-1.628-.244c0-.023-.055-.046-.055-.046v-.877h.104c.478.227.992.36 1.524.39.477 0 .79-.053.79-.54 0-.488-.319-.633-.998-.877-.68-.244-1.469-.685-1.469-1.561 0-.876.735-1.416 1.94-1.416Zm5.74 2.867c.043.394-.06.79-.293 1.103-.245.22-.563.33-.888.301-.985 0-1.034-.551-1.034-1.456v-2.862h-1.181v2.966c0 .952 0 2.258 2.117 2.258 2.118 0 2.167-.755 2.167-2.258v-2.966h-.888v2.914Zm5.006.418v-3.332h.777v5.224H43.4l-2.631-3.587v3.587h-.826v-5.224h1.022l2.484 3.332Z" fill="currentColor"></path><defs><linearGradient id="icon_tvlogo_tvchosun_h22_svg__a" x1="7.471" y1="5.993" x2="7.471" y2="16.335" gradientUnits="userSpaceOnUse"><stop offset="0.25" stop-color="#EC1C24"></stop><stop offset="0.75" stop-color="#AE1E23"></stop></linearGradient><linearGradient id="icon_tvlogo_tvchosun_h22_svg__b" x1="6.896" y1="7.699" x2="6.896" y2="13.445" gradientUnits="userSpaceOnUse"><stop offset="0.5" stop-color="#fff"></stop><stop offset="1" stop-color="#A36E5D"></stop></linearGradient></defs></svg><span class="blind">TV 조선</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/mbn"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand mbn"><path fill-rule="evenodd" clip-rule="evenodd" d="m14.172 7.38-2.099 2.256L9.937 7.38A1.202 1.202 0 0 0 9.061 7H7v8.15h2.328V9.91l2.558 2.716c.043.049.107.08.171.08a.217.217 0 0 0 .17-.08l2.596-2.716v5.24h2.328V7h-2.098a1.254 1.254 0 0 0-.876.38h-.005Zm13.771 1.844a2.079 2.079 0 0 1-.948 1.715 2.262 2.262 0 0 1 1.37 2.03c0 1.185-1.068 2.144-2.44 2.181h-7.401V7.043h6.942c1.297.075 2.477 1.034 2.477 2.18Zm-7.096-.311h4.042a.73.73 0 0 1 .726.648.682.682 0 0 1-.726.611h-4.042V8.913Zm4.464 4.324h-4.464v-1.264h4.464a.677.677 0 0 1 .496.177.711.711 0 0 1 .23.476.655.655 0 0 1-.726.617v-.006ZM36.6 7h2.365v8.15h-1.831a1.232 1.232 0 0 1-.876-.38l-4.694-4.978v5.358h-2.328V7h2.173c.331.005.646.145.881.38l4.31 4.598V7Z" fill="#EB6608"></path></svg><span class="blind">MBN</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/channela"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand channela"><g clip-path="url(#icon_tvlogo_channelA_h22_svg__a)"><path d="M35.155 14.29c.548 0 1.15-.32 1.431-.641l-.709-1.03c-.107.12-.307.267-.414.24-.107-.026-.12-.12-.12-.28V7.403h-1.391v5.47c0 .989.535 1.417 1.203 1.417ZM32.788 12.097s-.588.87-1.711.87c-.481 0-.963-.389-1.057-.71l3.437-1.002c0-1.137-.789-2.26-2.394-2.26a2.57 2.57 0 0 0-2.567 2.62c0 1.592 1.243 2.675 2.58 2.675 1.07 0 2.02-.615 2.394-1.177l-.682-1.016Zm-1.724-1.872c.387-.04.815.067.869.348.067.36-1.31.896-1.819 1.11l-.24.094c-.16-1.03.615-1.485 1.19-1.551ZM23.227 14.09h1.418v-2.233c0-.856.267-1.78 1.03-1.78.762 0 1.002.603 1.002 1.512v2.5h1.404v-2.955c0-1.296-.642-2.14-1.792-2.14-.976 0-1.39.683-1.551 1.11-.013.028-.027.054-.053.054-.027 0-.04-.013-.04-.04v-.923h-1.418v4.895ZM17.705 14.09h1.417v-2.233c0-.856.268-1.78 1.017-1.78.749 0 1.016.603 1.016 1.512v2.5h1.404v-2.955c0-1.296-.655-2.14-1.792-2.14-.976 0-1.39.683-1.551 1.11-.013.028-.027.054-.054.054-.026 0-.04-.013-.04-.04v-.923h-1.417v4.895ZM15.659 9.195v.923c0 .027-.027.04-.054.04-.013 0-.04 0-.053-.04-.16-.428-.602-1.123-1.511-1.123-1.404 0-2.02 1.43-2.02 2.62 0 1.19.616 2.675 2.02 2.675.91 0 1.35-.682 1.51-1.123.014-.04.028-.054.054-.054.04 0 .054.027.054.054v.923h1.377V9.195h-1.377Zm-1.11 3.999c-.696 0-1.137-.549-1.137-1.578 0-.976.442-1.538 1.137-1.538.588 0 1.03.562 1.03 1.538 0 1.03-.442 1.578-1.03 1.578ZM6.713 14.09H8.09v-2.233c0-.856.308-1.78 1.043-1.78.735 0 1.016.603 1.016 1.512v2.5h1.418v-2.955c0-1.296-.655-2.14-1.805-2.14-.976 0-1.39.67-1.538 1.097-.013.04-.027.067-.067.067-.053 0-.067-.04-.067-.08V7.404H6.713v6.686ZM3.236 14.29c1.993 0 3.009-1.685 3.009-2.862H4.814c0 .75-.696 1.551-1.578 1.551-.936 0-1.792-.882-1.792-2.246 0-1.364.882-2.3 1.792-2.3s1.404.655 1.55 1.805l1.391-.816c-.227-.829-.949-2.22-2.941-2.22C1.243 7.202 0 8.834 0 10.733c0 1.9 1.23 3.557 3.236 3.557Z" fill="currentColor"></path><path d="M42.002 6.001c-.535 0-.856.428-1.017.776l-2.717 5.669c-.388.802.121 1.845 1.044 1.845.549 0 .937-.307 1.299-.628l.365-.316v-1.614l-.5.298c-.106.067-.227.147-.294.094-.067-.04-.04-.134.014-.294l1.579-4.333c.067-.187.134-.294.227-.294.023 0 .046.003.066.013V6.004A1.072 1.072 0 0 0 42.002 6Z" fill="url(#icon_tvlogo_channelA_h22_svg__b)"></path><path d="m45.897 12.78-2.864-6.004c-.174-.348-.509-.776-1.03-.776a.949.949 0 0 0-.153.012v1.313c.045-.079.093-.122.152-.122.08 0 .148.04.201.241l1.7 6.004c.227.816.964.976 1.485.748.563-.254.75-.909.509-1.417Z" fill="url(#icon_tvlogo_channelA_h22_svg__c)"></path><path d="M45.723 9.062c-.053-.067-.174-.067-.32.027l-4.645 2.774v1.672l4.885-4.218c.107-.094.134-.188.08-.255Z" fill="url(#icon_tvlogo_channelA_h22_svg__d)"></path></g><defs><linearGradient id="icon_tvlogo_channelA_h22_svg__b" x1="38.898" y1="14.687" x2="42.901" y2="4.777" gradientUnits="userSpaceOnUse"><stop offset="0.3" stop-color="#7DD7FF"></stop><stop offset="0.7" stop-color="#196EFF"></stop></linearGradient><linearGradient id="icon_tvlogo_channelA_h22_svg__c" x1="42.205" y1="6.454" x2="45.44" y2="14.46" gradientUnits="userSpaceOnUse"><stop offset="0.1" stop-color="#196EFF"></stop><stop offset="0.23" stop-color="#186AF9"></stop><stop offset="0.41" stop-color="#1661E8"></stop><stop offset="0.6" stop-color="#1352CD"></stop><stop offset="0.82" stop-color="#0E3DA8"></stop><stop offset="1" stop-color="#0A2882"></stop></linearGradient><linearGradient id="icon_tvlogo_channelA_h22_svg__d" x1="41.342" y1="13.831" x2="44.951" y2="7.581" gradientUnits="userSpaceOnUse"><stop offset="0.3" stop-color="#7DD7FF"></stop><stop offset="0.39" stop-color="#6BC4FF"></stop><stop offset="0.57" stop-color="#3E94FF"></stop><stop offset="0.7" stop-color="#196EFF"></stop></linearGradient><clipPath id="icon_tvlogo_channelA_h22_svg__a"><path fill="#fff" transform="translate(0 6)" d="M0 0h46v8.291H0z"></path></clipPath></defs></svg><span class="blind">CHANNEL A</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/jtbc"><span class="icon_jtbc_w46h22"></span><span class="blind">JTBC</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/cjenm"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand cjenm"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.881 8.167c-2.294-.863-4.614-.774-5.202.239-.594 1.02.272 3.437 1.904 5.44 1.632 2.004 3.94 1.939 5.212-.25 1.253-2.183.378-4.57-1.91-5.432" fill="#FF9700"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11.207 8.865c2.038 1.33 4.318 1.732 5.127.87.817-.87.535-3.408-.59-5.707-1.126-2.3-3.39-2.724-5.14-.86-1.73 1.863-1.43 4.374.6 5.697" fill="#006ECD"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M18.507 15.862c-.325-2.335-1.538-4.225-2.75-4.225-1.223 0-3.012 1.896-4.053 4.234-1.038 2.338.144 4.229 2.764 4.229 2.608-.018 4.365-1.908 4.04-4.238Z" fill="#EF151E"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5.783 15.065c1.538 0 2.329-1.084 2.329-1.084s-.341-.41-.797-.41c-.216 0-.366.087-.523.18-.222.128-.475.275-1.01.275a1.64 1.64 0 0 1-1.635-1.66c0-.932.735-1.694 1.636-1.694.47 0 .73.153.957.286l.006.004c.168.101.318.188.515.188.407 0 .829-.433.829-.433s-.72-1.084-2.307-1.084C4.194 9.633 3 10.83 3 12.368c0 1.538 1.244 2.697 2.783 2.697Zm2.732-4.668c0-.364.278-.609.694-.609h2.273v.367c0 .35-.3.607-.719.61v2.765c0 .663-.094 1.096-.322 1.5-.422.74-1.257 1.041-2.042 1.223-.2.048-.25.015-.206-.247l.005-.03c.032-.195.067-.412.567-.64.61-.277.697-.809.735-1.134.038-.329.003-3.437.003-3.437h-.988v-.368ZM30.448 10.747c.281 0 .519-.227.519-.496v-.463h-3.661c-.282 0-.52.236-.52.496v4.623h3.662c.281 0 .519-.293.519-.561v-.404H28.43c-.419 0-.49.197-.49.197v-1.337h2.385c.281 0 .519-.227.519-.496v-.469h-2.417c-.419 0-.49.197-.49.197v-1.287H30.447Zm12.059-.959v4.602c0 .335-.266.514-.635.514h-.488v-3.118l-.894 2.793c-.078.223-.366.325-.657.328h-.225l-1.103-3.12v2.597c0 .34-.26.52-.635.52h-.49v-4.596c0-.34.259-.52.634-.52h.803l1.16 3.393 1.048-3.07c.08-.212.3-.323.597-.323h.885Zm-7.198.496c0-.245.154-.496.413-.496h.713v4.623c0 .26-.222.496-.482.496h-.337l-2.67-3.428v2.932c0 .254-.222.496-.482.496h-.644v-4.623c0-.26.222-.496.482-.496h.494l2.513 3.166v-2.67Z" fill="currentColor"></path></svg><span class="blind">CJ ENM</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/kbs"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand kbs"><path fill-rule="evenodd" clip-rule="evenodd" d="m18.24 15.963-4.113-5.105 3.962-4.72h-2.791l-3.773 4.672V6.137H9.4v9.826h2.125V10.91l3.698 5.052h3.017ZM33.31 9.98c.616 0 3.24.391 3.24 2.964 0 2.723-2.648 3.016-2.648 3.016H27.71V14.37l4.981.003c1.445 0 1.43-1.36 1.43-1.36 0-1.489-1.706-1.43-1.706-1.43h-1.908c-.876 0-3.132-.311-3.132-2.612.001-2.765 2.8-2.833 2.8-2.833h5.667v1.57l-4.653.005c-1.504 0-1.48 1.151-1.48 1.151s.013 1.123 1.316 1.123l2.285-.007v.002Zm-6.033 3.239c0 1.661-1.361 2.743-2.858 2.743-1.265 0-5.992-.005-5.992-.005v-9.82h5.476s2.822.039 2.975 2.506c.107 1.703-1.023 2.086-1.023 2.086s1.422.591 1.422 2.49Zm-2.858 2.743h.001-.001Zm-1.24-8.23h-2.74v2.295h2.99c.303-.02 1.24-.09 1.24-1.14 0-1.221-1.49-1.155-1.49-1.155Zm-2.742 6.631h2.497c.973 0 2.142-.09 2.142-1.397s-1.557-1.365-1.557-1.365h-3.082v2.762Z" fill="#1D1160"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m18.24 15.963-4.113-5.105 3.962-4.72h-2.791l-3.773 4.672V6.137H9.4v9.826h2.125V10.91l3.698 5.052h3.017ZM33.31 9.98c.616 0 3.24.391 3.24 2.964 0 2.723-2.648 3.016-2.648 3.016H27.71V14.37l4.981.003c1.445 0 1.43-1.36 1.43-1.36 0-1.489-1.706-1.43-1.706-1.43h-1.908c-.876 0-3.132-.311-3.132-2.612.001-2.765 2.8-2.833 2.8-2.833h5.667v1.57l-4.653.005c-1.504 0-1.48 1.151-1.48 1.151s.013 1.123 1.316 1.123l2.285-.007v.002Zm-6.033 3.239c0 1.661-1.361 2.743-2.858 2.743-1.265 0-5.992-.005-5.992-.005v-9.82h5.476s2.822.039 2.975 2.506c.107 1.703-1.023 2.086-1.023 2.086s1.422.591 1.422 2.49Zm-2.858 2.743h.001-.001Zm-1.24-8.23h-2.74v2.295h2.99c.303-.02 1.24-.09 1.24-1.14 0-1.221-1.49-1.155-1.49-1.155Zm-2.742 6.631h2.497c.973 0 2.142-.09 2.142-1.397s-1.557-1.365-1.557-1.365h-3.082v2.762Z" fill="currentColor"></path></svg><span class="blind">KBS</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/mbc"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand mbc"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.309 6.2H9.233C7.659 6.2 6.7 6.92 6.7 8.41v7.073h2.688v-6.72h1.541v6.72h2.682v-6.72h1.543v6.72h2.688V8.41c0-1.49-.96-2.21-2.533-2.21Zm17.678 6.767V8.746h6.333V6.2h-6.63c-1.625 0-2.482.853-2.482 2.192v4.935c0 1.216.715 2.155 2.528 2.155h6.62v-2.516h-6.37.001Zm-6.993-2.439v2.424h-3.982V8.756h3.982v1.764c1.388 0 2.9-.556 2.9-2.093s-1.172-2.2-3.043-2.227h-6.57v9.283h6.625c1.876 0 3.55-.678 3.55-2.472 0-1.795-1.477-2.483-3.463-2.483h.001Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.309 6.2H9.233C7.659 6.2 6.7 6.92 6.7 8.41v7.073h2.688v-6.72h1.541v6.72h2.682v-6.72h1.543v6.72h2.688V8.41c0-1.49-.96-2.21-2.533-2.21Zm17.678 6.767V8.746h6.333V6.2h-6.63c-1.625 0-2.482.853-2.482 2.192v4.935c0 1.216.715 2.155 2.528 2.155h6.62v-2.516h-6.37.001Zm-6.993-2.439v2.424h-3.982V8.756h3.982v1.764c1.388 0 2.9-.556 2.9-2.093s-1.172-2.2-3.043-2.227h-6.57v9.283h6.625c1.876 0 3.55-.678 3.55-2.472 0-1.795-1.477-2.483-3.463-2.483h.001Z" fill="#fff" fill-opacity="0.1"></path></svg><span class="blind">MBC</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/sbs"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand sbs"><path fill-rule="evenodd" clip-rule="evenodd" d="m16.465 10.75-2.6-2.34a.834.834 0 0 1-.295-.631c0-.488.426-.884.953-.884h2.878v-1.22H13c-1.365 0-2.5.901-2.5 2.312 0 .603.25 1.151.659 1.562l3.064 2.832s.517.366.337.97c-.178.602-.962.602-1.255.602H10.5v2.471h4.256c1.721 0 3.117-1.289 3.117-2.88v-.024c.047-1.188-.605-2.041-1.408-2.77Zm17.182 0-2.6-2.34a.832.832 0 0 1-.295-.631c0-.488.427-.884.953-.884h2.878v-1.22h-4.4c-1.366 0-2.5.901-2.5 2.312 0 .603.248 1.151.657 1.562l3.064 2.832s.517.366.337.97c-.18.602-.962.602-1.255.602h-2.803v2.471h4.256c1.72 0 3.116-1.289 3.116-2.88v-.024c.048-1.188-.605-2.041-1.409-2.77Zm-8.767-.475c1.473.493 2.21 1.738 2.21 3.028 0 .961-.447 1.815-1.108 2.386-.746.596-1.666.713-2.102.733h-5.168L18.71 5.687h4.858v.003s1.237-.043 2.064.514c.575.414.941 1.048.941 1.805 0 1.129-.578 1.932-1.693 2.266Zm-2.376-3.36h-1.166V9.43h1.221c.934 0 1.514-.52 1.441-1.353-.1-1.162-1.32-1.162-1.496-1.162Zm-1.166 7.039h1.4c.935 0 1.655-.592 1.583-1.538-.102-1.32-1.462-1.322-1.638-1.322h-1.345v2.86Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m16.465 10.75-2.6-2.34a.834.834 0 0 1-.295-.631c0-.488.426-.884.953-.884h2.878v-1.22H13c-1.365 0-2.5.901-2.5 2.312 0 .603.25 1.151.659 1.562l3.064 2.832s.517.366.337.97c-.178.602-.962.602-1.255.602H10.5v2.471h4.256c1.721 0 3.117-1.289 3.117-2.88v-.024c.047-1.188-.605-2.041-1.408-2.77Zm17.182 0-2.6-2.34a.832.832 0 0 1-.295-.631c0-.488.427-.884.953-.884h2.878v-1.22h-4.4c-1.366 0-2.5.901-2.5 2.312 0 .603.248 1.151.657 1.562l3.064 2.832s.517.366.337.97c-.18.602-.962.602-1.255.602h-2.803v2.471h4.256c1.72 0 3.116-1.289 3.116-2.88v-.024c.048-1.188-.605-2.041-1.409-2.77Zm-8.767-.475c1.473.493 2.21 1.738 2.21 3.028 0 .961-.447 1.815-1.108 2.386-.746.596-1.666.713-2.102.733h-5.168L18.71 5.687h4.858v.003s1.237-.043 2.064.514c.575.414.941 1.048.941 1.805 0 1.129-.578 1.932-1.693 2.266Zm-2.376-3.36h-1.166V9.43h1.221c.934 0 1.514-.52 1.441-1.353-.1-1.162-1.32-1.162-1.496-1.162Zm-1.166 7.039h1.4c.935 0 1.655-.592 1.583-1.538-.102-1.32-1.462-1.322-1.638-1.322h-1.345v2.86Z" fill="#fff" fill-opacity="0.1"></path></svg><span class="blind">SBS</span></a></li></ul></nav><div class="Header_mode_wrap__CnQLB"><button class="Header_button_mode__K7u1M"><span class="Header_icon_applied__dY7x7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22"><g clip-path="url(#icon_light_mode_svg__a)" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="4.25"></circle><path d="M11 1.5V4M11 18v2.5M4.937 4.92l.707.708M16 16.5l.707.707M17 5.707 17.707 5M4.942 17.08l.707-.708M18 11h2.5M1.5 11H4" stroke-linecap="round"></path></g><defs><clipPath id="icon_light_mode_svg__a"><path fill="#fff" d="M0 0h22v22H0z"></path></clipPath></defs></svg></span><span class="Header_icon_next__L5wXj"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22"><path d="M18.61 12.475a7.75 7.75 0 1 1-9.124-9.078C8.676 4.806 8.317 6.2 8.344 7.5c.035 1.72.748 3.224 1.893 4.297 2.012 1.886 5.253 2.377 8.373.678Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><span class="blind">다크 모드로 변경</span></button><span class="Header_tooltip_hover__rNAYS"><span class="Header_icon_triangle__DSsEC"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none" class="Header_icon_light__EoVJq"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1H17Z" fill="#F8F8F8"></path><path d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1" stroke="#E7E7E7"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none" class="Header_icon_dark__KyHWb"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1H17Z" fill="#343436"></path><path d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1" stroke="#343436"></path></svg></span><span class="Header_tooltip_text__pbCxh">다크<span class="Header_only_wide__t0IuF"> 모드</span></span></span></div><a href="https://creator.tv.naver.com" class="Header_link_studio_menu__KefUn"><svg viewBox="0 0 90 17" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="90" height="17"><path d="M.513 8.545c-.018-1.278.446-2.372 1.39-3.28C2.85 4.346 3.97 3.9 5.265 3.928c.846 0 1.611.198 2.295.594a4.217 4.217 0 0 1 1.634 1.62l-1.378.972c-.638-.999-1.489-1.498-2.551-1.498-.828 0-1.516.279-2.065.837-.54.558-.81 1.26-.81 2.106 0 .846.27 1.543.81 2.092.548.549 1.237.824 2.065.824 1.062 0 1.913-.5 2.551-1.499l1.378.972a4.217 4.217 0 0 1-1.62 1.633c-.694.388-1.468.581-2.322.581-1.305.027-2.43-.414-3.375-1.323C.94 10.921.486 9.823.512 8.545Zm13.912-2.228v1.607h-.486c-.558 0-1 .148-1.323.446-.315.296-.473.729-.473 1.296V13h-1.822V6.317h1.674v.797c.468-.585 1.08-.877 1.836-.877.225 0 .423.026.594.08Zm6.84 3.956h-4.684c.108.423.324.752.648.986.333.224.742.337 1.228.337.657 0 1.278-.225 1.863-.675l.756 1.242c-.8.666-1.692.999-2.673.999-1.026.018-1.899-.315-2.619-.999-.71-.693-1.057-1.526-1.04-2.498-.017-.962.32-1.79 1.013-2.483.693-.694 1.521-1.031 2.484-1.013.918 0 1.67.297 2.255.891.594.594.89 1.332.89 2.214 0 .324-.04.657-.12.999Zm-4.684-1.282h3.037c-.009-.405-.153-.73-.432-.973-.27-.252-.607-.378-1.012-.378-.387 0-.725.122-1.013.365-.288.243-.481.571-.58.986Zm11.53.04V13h-1.674v-.648c-.522.54-1.201.81-2.038.81-.702 0-1.265-.185-1.688-.554-.414-.369-.62-.85-.62-1.444 0-.603.224-1.075.674-1.418.46-.35 1.076-.526 1.85-.526h1.674v-.297c0-.378-.108-.666-.324-.864-.207-.207-.513-.31-.918-.31-.333 0-.635.072-.905.216-.27.143-.558.377-.864.701l-.945-1.12c.774-.918 1.746-1.377 2.916-1.377.882 0 1.58.252 2.093.756.513.495.77 1.197.77 2.106Zm-1.822 1.471v-.08h-1.431c-.621 0-.932.224-.932.675 0 .225.086.405.257.54.18.125.414.188.702.188.405 0 .738-.121.999-.364.27-.252.405-.572.405-.959Zm7.57.973V13a5.17 5.17 0 0 1-1.256.162c-.855 0-1.517-.212-1.985-.635-.459-.422-.688-1.048-.688-1.876V7.856h-1.053V6.318h1.053V4.63h1.822v1.688h1.89v1.538h-1.89v2.633c0 .378.095.648.284.81.198.153.517.23.958.23.153 0 .441-.018.864-.054Zm.513-1.823c-.018-.954.328-1.777 1.04-2.47.71-.694 1.556-1.031 2.537-1.013.981-.018 1.827.32 2.538 1.013.72.692 1.071 1.516 1.053 2.47.018.954-.333 1.782-1.053 2.484-.72.693-1.57 1.03-2.551 1.013-.981.018-1.827-.32-2.538-1.013-.702-.702-1.044-1.53-1.026-2.484Zm4.806 1.31c.333-.342.5-.774.5-1.296 0-.523-.167-.959-.5-1.31a1.6 1.6 0 0 0-1.229-.526c-.504 0-.918.175-1.242.526-.324.342-.486.778-.486 1.31 0 .521.162.954.486 1.295.324.342.738.514 1.242.514.495 0 .905-.171 1.229-.514Zm7.59-4.644v1.606h-.487c-.558 0-.999.148-1.323.446-.315.296-.472.729-.472 1.296V13h-1.823V6.317h1.674v.797c.468-.585 1.08-.877 1.836-.877.225 0 .423.026.594.08Zm3.813 4.873 1.256-.945c.63.864 1.359 1.296 2.187 1.296.396 0 .706-.085.931-.256a.885.885 0 0 0 .338-.73c0-.251-.077-.445-.23-.58-.153-.144-.454-.32-.904-.527l-.959-.431c-1.44-.64-2.16-1.495-2.16-2.566 0-.755.28-1.363.837-1.822.558-.468 1.265-.702 2.12-.702.666 0 1.25.153 1.755.459.504.297.9.707 1.188 1.229l-1.242.958c-.46-.684-1.026-1.026-1.701-1.026-.324 0-.59.077-.797.23a.745.745 0 0 0-.31.634c0 .225.072.41.216.553.153.136.427.293.823.473l1.013.446c.765.341 1.323.715 1.674 1.12.35.396.526.891.526 1.485 0 .801-.292 1.449-.877 1.944-.585.486-1.332.729-2.241.729a3.95 3.95 0 0 1-2.025-.527 3.9 3.9 0 0 1-1.418-1.444Zm11.968.284V13a5.17 5.17 0 0 1-1.256.162c-.855 0-1.516-.212-1.984-.635-.46-.422-.689-1.048-.689-1.876V7.856h-1.053V6.318h1.053V4.63h1.823v1.688h1.89v1.538h-1.89v2.633c0 .378.094.648.283.81.198.153.518.23.959.23.153 0 .44-.018.864-.054Zm.956-1.418v-3.74h1.822v3.889c0 .386.117.697.351.931.243.234.549.351.918.351.36 0 .657-.117.891-.351.234-.243.351-.553.351-.931V6.318h1.823v3.739c0 .918-.293 1.665-.878 2.241-.576.576-1.305.864-2.187.864-.9 0-1.642-.284-2.228-.85-.575-.576-.863-1.328-.863-2.255Zm12.458-7.182h1.823V13h-1.674v-.823c-.46.657-1.175.985-2.147.985-.936 0-1.71-.329-2.322-.986-.612-.665-.918-1.502-.918-2.51 0-1.008.306-1.841.918-2.498.612-.666 1.386-.999 2.322-.999.846 0 1.512.266 1.998.796v-4.09Zm-.459 8.14c.324-.324.486-.774.486-1.35 0-.575-.162-1.025-.486-1.35a1.61 1.61 0 0 0-1.202-.499c-.495 0-.909.171-1.242.513-.323.342-.486.783-.486 1.323 0 .549.163.995.487 1.337.323.341.737.512 1.241.512.486 0 .887-.162 1.202-.486ZM79.294 13V6.317h1.822V13h-1.823Zm-.257-9.113c0-.324.112-.594.337-.81.225-.216.5-.324.824-.324.324 0 .598.108.823.325.234.216.351.486.351.81 0 .314-.117.58-.35.796-.226.216-.5.324-.824.324-.324 0-.599-.108-.824-.324a1.06 1.06 0 0 1-.337-.796Zm3.204 5.765c-.018-.954.328-1.777 1.04-2.47.71-.694 1.556-1.031 2.537-1.013.981-.018 1.827.32 2.538 1.013.72.692 1.071 1.516 1.053 2.47.018.954-.333 1.782-1.053 2.484-.72.693-1.57 1.03-2.551 1.013-.981.018-1.827-.32-2.538-1.013-.702-.702-1.044-1.53-1.026-2.484Zm4.806 1.31c.333-.342.5-.774.5-1.296 0-.523-.167-.959-.5-1.31a1.6 1.6 0 0 0-1.229-.526c-.504 0-.918.175-1.242.526-.324.342-.486.778-.486 1.31 0 .521.162.954.486 1.295.324.342.738.514 1.242.514.495 0 .905-.171 1.229-.514Z" fill="currentColor"></path></svg><span class="blind">Creator Studio</span></a></div></div><div class="Header_layer_dimmed__x0zGg" aria-hidden="true"></div></div><div class="_search_area Search_search_wrap__lqZZ8  "><div class="_search_dimmed Search_layer_dimmed__nYVAD" aria-hidden="true"></div><div class="Search_layer_search__srb8X"><div class="Search_input_section__m3aHz"><label class="Search_label_search__38jIt" for="__gnb__searchInput"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path d="m14.5 13.6 3 3" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="9.6" cy="9.2" r="6.4" stroke="currentColor" stroke-width="1.6"></circle></svg><span class="blind">검색창</span></label><input type="text" id="__gnb__searchInput" class="Search_input_search__Ekfhu" value="" placeholder="동영상, 채널, 라이브를 검색할 수 있어요." autoComplete="off"/><span class="Search_search_control__IFJCN"><button type="button" class="Search_button_erase__MLPAp"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.158-11.159a.8.8 0 0 1 0 1.132L11.131 10l2.027 2.027a.8.8 0 0 1-1.131 1.131L10 11.131l-2.027 2.027a.8.8 0 0 1-1.132-1.131L8.868 10 6.841 7.973A.8.8 0 1 1 7.973 6.84L10 8.868l2.027-2.027a.8.8 0 0 1 1.131 0Z" fill="currentColor"></path></svg><span class="blind">검색어 지우기</span></button><button class="Search_button_submit__vb8zX Search_disabled__0Ncc8" aria-disabled="false"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path d="m14.5 13.6 3 3" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="9.6" cy="9.2" r="6.4" stroke="currentColor" stroke-width="1.6"></circle></svg><span class="blind">검색</span></button><button type="button" class="Search_button_cancel__FK8Og">취소</button></span></div><div class="Search_keyword_section__01fmY"><div class="Search_scroll_wrap__zF_se" style="display:none"></div></div></div></div><div class="Header_right_wrap__HlL0A"><a href="https://creator.tv.naver.com" class="Header_link_studio__Z1DYf"><svg viewBox="0 0 72 14" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="72" height="14"><path d="M.415 6.398C.4 5.364.775 4.48 1.539 3.745c.764-.742 1.67-1.102 2.718-1.08.684 0 1.303.16 1.856.48.56.313 1 .75 1.32 1.31L6.32 5.24c-.516-.808-1.204-1.212-2.063-1.212-.67 0-1.226.226-1.67.677-.437.451-.655 1.019-.655 1.703 0 .684.218 1.248.655 1.692.444.444 1 .666 1.67.666.859 0 1.547-.404 2.063-1.212l1.114.786c-.313.56-.75 1-1.31 1.32-.56.314-1.186.47-1.878.47-1.055.022-1.965-.335-2.729-1.07C.76 8.32.393 7.431.415 6.398Zm11.24-1.801v1.299h-.394c-.451 0-.808.12-1.07.36-.254.24-.382.59-.382 1.048V10H8.336V4.597h1.353v.644a1.81 1.81 0 0 1 1.485-.71c.182 0 .342.022.48.066Zm5.52 3.198h-3.787c.088.342.262.608.524.797.27.182.6.273.993.273.532 0 1.034-.182 1.507-.546l.611 1.004c-.648.539-1.368.808-2.161.808-.83.014-1.536-.255-2.118-.808-.575-.56-.855-1.233-.84-2.02-.015-.778.258-1.447.818-2.008.56-.56 1.23-.833 2.009-.818.742 0 1.35.24 1.823.72.48.48.72 1.077.72 1.79 0 .262-.033.532-.098.808Zm-3.787-1.037h2.456c-.007-.327-.123-.59-.35-.786a1.153 1.153 0 0 0-.818-.306 1.23 1.23 0 0 0-.819.295c-.232.197-.389.462-.469.797Zm9.314.033V10h-1.354v-.524c-.422.437-.971.655-1.648.655-.567 0-1.022-.15-1.364-.448-.335-.298-.502-.687-.502-1.168 0-.487.182-.87.545-1.146.372-.283.87-.425 1.496-.425h1.353v-.24c0-.306-.087-.539-.262-.7-.167-.167-.414-.25-.742-.25-.27 0-.513.058-.731.174-.218.117-.451.306-.699.568l-.764-.906c.626-.742 1.412-1.113 2.358-1.113.713 0 1.277.203 1.692.61.415.401.622.969.622 1.704Zm-1.474 1.19v-.066h-1.157c-.502 0-.753.182-.753.546 0 .182.07.327.208.437.145.101.334.152.567.152.328 0 .597-.098.808-.294.218-.204.327-.462.327-.775Zm6.111.786V10c-.349.087-.687.131-1.015.131-.69 0-1.226-.171-1.604-.513-.371-.342-.557-.848-.557-1.517V5.84h-.851V4.597h.851V3.232h1.474v1.365h1.528V5.84h-1.528V7.97c0 .305.076.524.229.655.16.123.418.185.775.185.124 0 .357-.014.699-.043Zm.406-1.474c-.014-.771.266-1.437.84-1.998a2.762 2.762 0 0 1 2.053-.818 2.762 2.762 0 0 1 2.052.818c.582.56.866 1.227.852 1.998.014.771-.27 1.44-.852 2.008-.582.56-1.27.834-2.063.82a2.762 2.762 0 0 1-2.052-.82c-.568-.567-.844-1.237-.83-2.008Zm3.886 1.059c.27-.277.404-.626.404-1.048 0-.422-.134-.775-.404-1.059a1.294 1.294 0 0 0-.993-.426c-.408 0-.742.142-1.004.426-.262.277-.393.63-.393 1.059 0 .422.13.771.393 1.048.262.276.596.415 1.004.415.4 0 .731-.139.993-.415Zm6.127-3.755v1.299h-.392c-.452 0-.808.12-1.07.36-.255.24-.382.59-.382 1.048V10H34.44V4.597h1.354v.644a1.81 1.81 0 0 1 1.484-.71c.182 0 .342.022.48.066Zm1.818 3.94 1.015-.764c.51.699 1.099 1.048 1.768 1.048.32 0 .572-.069.753-.207a.715.715 0 0 0 .273-.59c0-.203-.062-.36-.185-.47-.124-.116-.368-.257-.732-.425l-.775-.35c-1.164-.516-1.746-1.207-1.746-2.073 0-.611.225-1.103.677-1.474.45-.378 1.022-.567 1.713-.567.539 0 1.012.123 1.42.37.407.24.727.572.96.994l-1.004.775c-.371-.553-.83-.83-1.376-.83-.262 0-.476.062-.644.186a.602.602 0 0 0-.25.513c0 .182.058.331.174.448.124.109.346.236.666.382l.819.36c.618.276 1.07.578 1.353.906.284.32.426.72.426 1.2 0 .648-.237 1.172-.71 1.573-.473.393-1.077.589-1.812.589-.604 0-1.15-.142-1.637-.426a3.153 3.153 0 0 1-1.146-1.168Zm9.667.23V10c-.35.087-.688.131-1.015.131-.692 0-1.226-.171-1.605-.513-.37-.342-.556-.848-.556-1.517V5.84h-.852V4.597h.852V3.232h1.473v1.365h1.528V5.84H47.54V7.97c0 .305.077.524.23.655.16.123.418.185.774.185.124 0 .357-.014.699-.043Zm.764-1.147V4.597h1.473V7.74c0 .313.095.564.284.754.196.189.444.283.742.283a.976.976 0 0 0 .72-.283c.19-.197.284-.448.284-.754V4.597h1.474V7.62c0 .743-.236 1.347-.71 1.812-.465.466-1.055.699-1.768.699-.728 0-1.328-.23-1.8-.688-.467-.465-.7-1.073-.7-1.823ZM60.07 1.813h1.473V10h-1.353v-.666c-.371.531-.95.797-1.736.797-.757 0-1.382-.266-1.877-.797-.495-.538-.742-1.215-.742-2.03 0-.815.247-1.488.742-2.02.495-.538 1.12-.807 1.877-.807.684 0 1.223.214 1.616.644V1.813ZM59.7 8.395c.262-.262.393-.625.393-1.091 0-.466-.131-.83-.393-1.092a1.302 1.302 0 0 0-.972-.404c-.4 0-.735.139-1.004.415-.262.277-.393.633-.393 1.07 0 .444.13.804.393 1.08.262.277.597.415 1.004.415.393 0 .717-.13.972-.393ZM62.754 10V4.597h1.474V10h-1.474Zm-.207-7.368c0-.262.09-.48.273-.655a.926.926 0 0 1 .666-.262c.262 0 .483.087.665.262.19.175.284.393.284.655 0 .255-.094.47-.284.644a.926.926 0 0 1-.665.262.926.926 0 0 1-.666-.262.858.858 0 0 1-.273-.644Zm2.581 4.66c-.014-.77.266-1.436.84-1.997a2.762 2.762 0 0 1 2.053-.818 2.762 2.762 0 0 1 2.052.818c.582.56.866 1.227.851 1.998.015.771-.269 1.44-.851 2.008-.582.56-1.27.834-2.063.82a2.762 2.762 0 0 1-2.052-.82c-.568-.567-.844-1.237-.83-2.008Zm3.886 1.06c.27-.277.404-.626.404-1.048 0-.422-.135-.775-.404-1.059a1.294 1.294 0 0 0-.993-.426c-.408 0-.743.142-1.005.426-.262.277-.392.63-.392 1.059 0 .422.13.771.392 1.048.262.276.597.415 1.005.415.4 0 .731-.139.993-.415Z" fill="currentColor"></path></svg><span class="blind">Creator Studio</span></a><span class="Header_search_area__18ZCR"><button type="button" class="Header_button_search__Cu5Vz"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="30" height="30"><path d="m20.5 20.5 4 4" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="14.5" cy="14.5" r="8.175" stroke="currentColor" stroke-width="1.65"></circle></svg><span class="blind">검색</span></button></span><div class="Header_upload_area__RYOr9"><button type="button" class="Header_link_upload__ZGZHe"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="30" height="30"><path d="M14.5 10v9M19 14.5h-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M3.8 11A7.2 7.2 0 0 1 11 3.8h7a7.2 7.2 0 0 1 7.2 7.2v7a7.2 7.2 0 0 1-7.2 7.2h-7A7.2 7.2 0 0 1 3.8 18v-7Z" stroke="currentColor" stroke-width="1.6"></path></svg><span class="blind">영상 업로드</span></button><div class="Header_upload_tooltip__IWs2i"><span class="Header_tooltip_text__pbCxh">이제 누구나 네이버TV에 영상을 <br class="Header_break_sub__tf6MV"/>올릴 수 있어요!<br class="Header_break_main__WQENw"/>내 채널을 만들고, <br class="Header_break_sub__tf6MV"/>네이버TV 크리에이터에 도전하세요!</span><footer class="Footer_footer__5bZGY"><div class="Footer_footer_inner__1YE9q"><div class="Footer_corporation_wrap__CHrP5"><div><span class="Footer_terms_item__NJ1eG"><a href="https://policy.naver.com/rules/privacy.html" target="_blank" rel="noreferrer" class="Footer_link_terms__gWa0s" data-nlog-area="footer.privacy"><strong>개인정보처리방침</strong></a></span><span class="Footer_terms_item__NJ1eG"><a href="https://policy.naver.com/rules/service.html" target="_blank" rel="noreferrer" class="Footer_link_terms__gWa0s" data-nlog-area="footer.usage">이용약관</a></span><span class="Footer_terms_item__NJ1eG"><a href="https://policy.naver.com/rules/disclaimer.html" target="_blank" rel="noreferrer" class="Footer_link_terms__gWa0s" data-nlog-area="footer.disclaimer">책임의 한계와 법적고지</a></span><span class="Footer_terms_item__NJ1eG"><a href="https://help.naver.com/service/17223/category/bookmark?lang=ko" target="_blank" rel="noreferrer" class="Footer_link_terms__gWa0s" data-nlog-area="footer.help">고객센터</a></span><span class="Footer_terms_item__NJ1eG"><a href="https://creator.tv.naver.com/join" target="_blank" rel="noreferrer" class="Footer_link_terms__gWa0s" data-nlog-area="footer.creatorstudio">채널 만들기</a></span><span class="Footer_terms_item__NJ1eG"><a href="/n/policy" target="_blank" rel="noreferrer" class="Footer_link_terms__gWa0s" data-nlog-area="footer.operation">운영정책</a></span></div><p class="Footer_copyright_notice__ECsKu">본 콘텐츠의 저작권은 저작권자에 있으며, 이를 무단으로 이용하는 경우 저작권법 등에 따라 법적 책임을 질 수 있습니다.</p><span class="Footer_copyright__u_mR_"><span class="Footer_icon_naver__bC2Z8" data-nlog-area="footer.naver"><svg viewBox="0 0 53 10" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="53" height="10"><path fill-rule="evenodd" clip-rule="evenodd" d="M15 0 11.08 10h3.316l.476-1.333h3.787L19.136 10h3.315L18.53 0H15Zm1.765 3.21 1.118 3.124h-2.236l1.118-3.124ZM33.167 0v10h7.832V7.5h-4.665V6.166h4.5V3.834h-4.5V2.5h4.665V0h-7.832ZM28.774 0l-2.352 6.575L24.068 0h-3.334l3.922 10h3.53l3.922-10h-3.334ZM6.833 0v5.353L3.187 0H0v10h3.167V4.647L6.813 10H10V0H6.833ZM47.43 4.667h-1.764V2.503h1.755a1.082 1.082 0 0 1 .01 2.164Zm2.218 1.903.303-.126c1.162-.487 1.753-1.54 1.753-2.875 0-1.262-.46-2.198-1.369-2.78C49.49.25 48.395 0 46.887 0h-4.22v10h3.165V7.167h1.14L48.9 10h3.277l-2.529-3.43Z" fill="currentColor"></path></svg><span class="blind">NAVER</span></span><span class="Footer_text__IMN95">Copyright</span><span class="Footer_text__IMN95">© NAVER Corp. All Rights Reserved.</span></span></div></div></footer></div></div>
+}setInitialColorMode();})()</script><div id="__next" data-reactroot=""><div role="dialog" aria-modal="true"></div><div role="dialog" aria-live="polite"></div><div id="root" class="wrap"><div id="u_skip"><a href="#content"><span>본문으로 바로가기</span></a></div><header class="Header_header__JAW_Z Header_channel_header__4mguP Header_without_background__UAAeK"><div class="Header_left_wrap__aVIXl"><h1 class="Header_logo_area__dpgTc"><a class="Header_link_navertv__TqTR3" href="/"><svg viewBox="0 0 117 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="117" height="16"><path fill-rule="evenodd" clip-rule="evenodd" d="m22.425.5-5.864 14.95h4.958l.712-1.993h5.661l.715 1.992h4.955L27.702.5h-5.277Zm2.637 4.799 1.671 4.67H23.39l1.672-4.67ZM49.58.5v14.95h11.709v-3.737h-6.975V9.718h6.727V6.232h-6.727V4.237h6.975V.5H49.58ZM43.013.5l-3.516 9.83L35.98.5h-4.985l5.864 14.95h5.276L47.998.5h-4.985ZM10.215.5v8.002L4.764.5H0v14.95h4.734V7.447l5.451 8.001h4.764V.5h-4.734ZM70.904 7.477h-2.637V4.242h2.624a1.618 1.618 0 0 1 .013 3.235Zm3.316 2.844.453-.188c1.736-.728 2.62-2.303 2.62-4.298 0-1.887-.687-3.286-2.046-4.154C73.983.872 72.347.5 70.093.5h-6.309v14.95h4.731v-4.236h1.704l2.882 4.235H78l-3.78-5.128ZM111.367.5l-3.514 9.824L104.337.5h-4.982l5.86 14.94h5.273L116.349.5h-4.982ZM88.58.5H84v4.311h4.58V15.5h4.85V4.811h4.581V.5h-9.43Z" fill="currentColor"></path></svg><span class="blind">NAVER TV</span></a></h1><button type="button" aria-expanded="false" aria-haspopup="menu" aria-controls="wa_header_menu" class="Header_button_menu__8f3_9"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="24" height="24"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 5a1 1 0 0 0 0 2h18a1 1 0 1 0 0-2H3Zm-1 7a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Zm0 6a1 1 0 0 1 1-1h18a1 1 0 1 1 0 2H3a1 1 0 0 1-1-1Z" fill="currentColor"></path></svg><span class="blind">메뉴</span></button></div><div aria-labelledby="wa_header_menu" class="Header_layer_menu__8wMgP "><div class="Header_layer_content__u6ydj"><div id="headerScrollWrap" class="Header_scroll_wrap__tOk4E"><nav class="Header_menu_wrap__J2HC0"><ul role="menu" class="Header_main_menu_list__hat5m"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path clip-rule="evenodd" d="M2 8.725a3 3 0 0 1 1.354-2.508L9.903 1.92a2 2 0 0 1 2.194 0l6.549 4.297A3 3 0 0 1 20 8.725V17.2a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V8.725Z" stroke="currentColor" stroke-width="1.5"></path><path d="M11 15.2v5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">홈</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/l"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M6.827 5.771c-1.043.951-1.687 2.253-1.687 3.69 0 1.436.644 2.738 1.687 3.688m8.43-7.378c1.044.951 1.688 2.253 1.688 3.69 0 1.436-.644 2.738-1.688 3.688M4.073 3C2.358 4.607 1.3 6.808 1.3 9.236s1.058 4.629 2.773 6.235M17.927 3C19.642 4.607 20.7 6.808 20.7 9.236s-1.058 4.629-2.773 6.235" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path><circle cx="10.999" cy="9.236" r="2.021" stroke="currentColor" stroke-width="1.5"></circle><path d="M11.042 11.585v8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">생중계</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/h"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M15.6 10.5L10.2225 6.93922C9.42479 6.41101 8.35999 6.98302 8.35999 7.93976V11" stroke="url(#0000000)" stroke-width="1.5" stroke-linejoin="round"></path><path d="M11.2 19.9999C14.711 19.9999 17.7536 17.6591 19.3177 14.7352C19.7523 13.9227 19.4049 12.9474 18.6316 12.4463L16.4 11" stroke="url(#0000000)" stroke-width="1.5" stroke-linejoin="round"></path><path d="M11.2512 20C10.9414 20 10.635 19.9852 10.333 19.9562C5.65473 19.5078 2 15.6691 2 11C2 6.02944 6.14192 2 11.2512 2C14.7643 2 17.8084 4.32867 19.3717 7.25078C19.8048 8.06052 19.4606 9.03272 18.6921 9.53538L10.2153 15.0796C9.41717 15.6017 8.35844 15.029 8.35844 14.0754V11.5V11" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path><defs><linearGradient id="0000000" x1="13.5" y1="8.5" x2="15.5" y2="10.5" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor" stop-opacity="0"></stop></linearGradient><linearGradient id="0000000" x1="18.5" y1="14" x2="16.5" y2="11" gradientUnits="userSpaceOnUse"><stop stop-color="currentColor"></stop><stop offset="1" stop-color="currentColor" stop-opacity="0"></stop></linearGradient></defs></svg></span><span class="Header_text__LA4HP">클립</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/f"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><rect x="2" y="5.5" width="18" height="14" rx="4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></rect><path d="M13.326 11.75 10.29 9.727a.7.7 0 0 0-1.089.582v4.05a.7.7 0 0 0 1.089.583l3.037-2.025a.7.7 0 0 0 0-1.165ZM4.5 2.35a.75.75 0 0 1 .75-.75h11.5a.75.75 0 0 1 0 1.5H5.25a.75.75 0 0 1-.75-.75Z" fill="currentColor"></path></svg></span><span class="Header_text__LA4HP">구독</span></a></li></ul><span class="Header_menu_title__pFzEd">My</span><ul role="menu" class="Header_library_menu_list__cAA3v"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/my?tab=recent"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M11 2a9 9 0 1 0 8.37 12.316" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 2a9 9 0 0 1 9 9c0 .667-.3 2.3-.7 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="1 3"></path><path d="M10.5 6.5v5h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">최근<span class="Header_hidden_reduced__y3kxs"> 본 영상</span></span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/my?tab=liked"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M9.52 4.357A4.626 4.626 0 0 0 6.86 3.5a4.81 4.81 0 0 0-3.45 1.46C2.537 5.854 1.984 6.863 2 8.648c.016 1.745.843 3.002 2.559 4.718a109.862 109.862 0 0 0 5.81 5.074.99.99 0 0 0 1.247 0c2.004-1.618 4.258-3.522 5.81-5.074C19.143 11.65 20 10.467 20 8.647c0-1.386-.555-2.812-1.477-3.713-.903-.884-2.16-1.432-3.614-1.429a4.661 4.661 0 0 0-2.536.918 5.946 5.946 0 0 0-1.397 1.487A5.253 5.253 0 0 0 9.52 4.357Z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">좋아요<span class="Header_hidden_reduced__y3kxs"> 한 영상</span></span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/my?tab=saved"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M5.262 18.552 11 13.512l5.72 5.005c.088.072.2.113.316.114a.44.44 0 0 0 .185 0 .448.448 0 0 0 .279-.404V7.773M5.262 18.553a.496.496 0 0 1-.502.078.446.446 0 0 1-.26-.404V3.94c0-.242.208-.439.464-.439h12.072c.123 0 .24.046.328.129a.428.428 0 0 1 .136.31v3.834M5.262 18.553 17.5 7.772" stroke="currentColor" stroke-width="1.4"></path></svg></span><span class="Header_text__LA4HP">나중에<span class="Header_hidden_reduced__y3kxs"> 볼 영상</span></span></a></li></ul><span class="Header_menu_title__pFzEd">탐색</span><ul role="menu" class="Header_genre_menu_list__NbKFm"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/r"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M11.133 14.938v1.837" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 20.068h6.318a.5.5 0 0 0 .5-.5v-.454c0-1.05-.688-1.91-1.527-1.91H8.709c-.84 0-1.528.86-1.528 1.91v.454a.5.5 0 0 0 .5.5H8Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"></path><path d="M11.001 14.5a6.12 6.12 0 0 1-6.125-6.126V5.75c0-1.933 1.566-3.5 3.5-3.5h5.25a3.5 3.5 0 0 1 3.5 3.5v2.625a6.12 6.12 0 0 1-6.125 6.125Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M5.318 11A5.687 5.687 0 0 1 3.17 9.902C2.168 8.986 1.5 7.888 1.5 6.607c0-1.282 1.224-2.289 2.783-2.289h.723a2.919 2.919 0 0 0-.333 1.373v2.746c0 .916.233 1.776.645 2.563ZM16.727 11a5.688 5.688 0 0 0 2.149-1.098c1.002-.915 1.67-2.014 1.67-3.295 0-1.282-1.225-2.288-2.783-2.288h-.724c.223.42.334.887.334 1.373v2.746c0 .915-.234 1.775-.646 2.562Z" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">TOP100</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/i"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M14.708 5.652h3.444m0 0v3.444m0-3.444-6.59 6.59-3.153-3.151L3 14.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.667 3.667v13.166c0 1.384 1.117 2.5 2.5 2.5h13.167" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">급상승</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/news"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M16.83 13.875V5.781m0 0V5.5a3 3 0 0 0-3-3H5.5a3 3 0 0 0-3 3v11a3 3 0 0 0 3 3h11.4a3 3 0 0 0 3-3V7.781a2 2 0 0 0-2-2h-1.07Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path><path d="M6 6.8h7M6 10h7M6 13.2h4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">뉴스</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/sport"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle><path d="M9.54 2c.5 3.5-2.5 9-7.5 9.5M12.094 20.498c-.4-3.513 2.756-8.925 7.768-9.282" stroke="currentColor" stroke-width="1.3"></path></svg></span><span class="Header_text__LA4HP">스포츠</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/drama"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M5.8 20.5h8M16.8 6v6h1a3 3 0 1 0 0-6h-1ZM16.8 6h-13a1 1 0 0 0-1 1v4a7 7 0 1 0 14 0V6ZM14 1l-1 1.8M10.3 1l-1 1.8M6.5 1l-1 1.8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path></svg></span><span class="Header_text__LA4HP">드라마</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/enter"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle><path d="M15.5 11.5a4.5 4.5 0 1 1-9 0" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path></svg></span><span class="Header_text__LA4HP">예능</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_menu__A9JZs" href="/ct/other"><span class="Header_icon__ZUiy7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22" class="Header_icon_menu__4Y1zQ"><path d="M14.246 6.672 9.424 8.787c-.223.102-.49.368-.591.591L6.668 14.25c-.462 1.01.072 1.544 1.082 1.082l4.872-2.165c.222-.101.488-.368.59-.59l2.116-4.822c.462-1.043-.074-1.544-1.082-1.083Zm-2.4 5.18a1.2 1.2 0 1 1-1.697-1.696 1.2 1.2 0 0 1 1.697 1.696Z" fill="currentColor"></path><circle cx="11" cy="11" r="9.25" stroke="currentColor" stroke-width="1.5"></circle></svg></span><span class="Header_text__LA4HP">더 많은 영상</span></a></li></ul><span class="Header_menu_title__pFzEd">방송관</span><ul role="menu" class="Header_brand_menu_list__gdj5a"><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/tvchosun"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand tvchosun"><path d="M11.669 5.9H3.346C2.603 5.9 2 6.472 2 7.177v7.893c0 .705.603 1.277 1.346 1.277h8.323c.744 0 1.346-.572 1.346-1.277V7.177c0-.705-.602-1.277-1.346-1.277Z" fill="url(#icon_tvlogo_tvchosun_h22_svg__a)"></path><path d="M3.34 11.593c-.57 1.968.98 3.593 3.451 3.593 2.473 0 4.994-1.579 5.612-3.546h-2.215l-.257.336c-.14.198-.318.378-.514.528a5.036 5.036 0 0 1-3.14 1.248c-1.854.047-3.035-1.102-2.625-2.588.129-.453.373-.865.722-1.196A4.589 4.589 0 0 0 3.346 11.6" fill="#fff"></path><path d="m4.943 9.3-.269.291a2.69 2.69 0 0 0-.753 1.219c-.428 1.509.808 2.681 2.748 2.635 1.23-.047 2.399-.5 3.286-1.265a3.695 3.695 0 0 1-2.423.928c-1.456 0-2.264-.928-1.885-2.095.453-1.074 1.5-1.851 2.748-2.049l.428-1.317a7.204 7.204 0 0 0-3.88 1.66" fill="url(#icon_tvlogo_tvchosun_h22_svg__b)"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.599 6.48 21.16 9.54 19.93 6.48h-5.079v.5h1.591v3.563h1.028V6.98h1.64l1.488 3.563h.77l2.05-4.063h-.82Zm-3.562 4.84h.098l-.294.79h-.098a2.39 2.39 0 0 0-1.169-.342c-.973 0-1.511.737-1.511 1.92 0 1.185.538 1.875 1.511 1.875.423-.035.839-.15 1.218-.342h.147v.836c0 .011 0 .023-.012.034-.012.012-.025.012-.037.012-.428.14-.869.226-1.316.244-1.7 0-2.723-1.33-2.723-2.612 0-1.283.973-2.612 2.821-2.612.465.006.924.093 1.365.244v-.046Zm3.874 1.904v-2.1h1.12v5.223h-1.12V13.99h-2.044v2.357h-1.12v-5.224h1.12v2.101h2.044Zm4.51-2.1a2.834 2.834 0 0 0-1.983.748 2.464 2.464 0 0 0-.795 1.863c-.012.696.275 1.37.795 1.863a2.81 2.81 0 0 0 1.983.748c1.512-.029 2.73-1.19 2.73-2.611a2.41 2.41 0 0 0-.765-1.857 2.775 2.775 0 0 0-1.965-.755Zm.055 4.532c-1.205 0-1.517-1.381-1.517-2.17 0-.79.367-1.678 1.364-1.678.998 0 1.518 1.33 1.518 2.118 0 .79-.367 1.724-1.365 1.724v.006Zm5.226-4.486h.055v-.052c.46-.006.918.046 1.365.145l-.312.876a2.668 2.668 0 0 0-1.102-.29c-.477 0-.79.197-.79.54 0 .342.264.487.943.73l.05.019c.673.24 1.523.544 1.523 1.688 0 1.172-1.206 1.515-1.94 1.515a7.705 7.705 0 0 1-1.628-.244c0-.023-.055-.046-.055-.046v-.877h.104c.478.227.992.36 1.524.39.477 0 .79-.053.79-.54 0-.488-.319-.633-.998-.877-.68-.244-1.469-.685-1.469-1.561 0-.876.735-1.416 1.94-1.416Zm5.74 2.867c.043.394-.06.79-.293 1.103-.245.22-.563.33-.888.301-.985 0-1.034-.551-1.034-1.456v-2.862h-1.181v2.966c0 .952 0 2.258 2.117 2.258 2.118 0 2.167-.755 2.167-2.258v-2.966h-.888v2.914Zm5.006.418v-3.332h.777v5.224H43.4l-2.631-3.587v3.587h-.826v-5.224h1.022l2.484 3.332Z" fill="#575756"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M22.599 6.48 21.16 9.54 19.93 6.48h-5.079v.5h1.591v3.563h1.028V6.98h1.64l1.488 3.563h.77l2.05-4.063h-.82Zm-3.562 4.84h.098l-.294.79h-.098a2.39 2.39 0 0 0-1.169-.342c-.973 0-1.511.737-1.511 1.92 0 1.185.538 1.875 1.511 1.875.423-.035.839-.15 1.218-.342h.147v.836c0 .011 0 .023-.012.034-.012.012-.025.012-.037.012-.428.14-.869.226-1.316.244-1.7 0-2.723-1.33-2.723-2.612 0-1.283.973-2.612 2.821-2.612.465.006.924.093 1.365.244v-.046Zm3.874 1.904v-2.1h1.12v5.223h-1.12V13.99h-2.044v2.357h-1.12v-5.224h1.12v2.101h2.044Zm4.51-2.1a2.834 2.834 0 0 0-1.983.748 2.464 2.464 0 0 0-.795 1.863c-.012.696.275 1.37.795 1.863a2.81 2.81 0 0 0 1.983.748c1.512-.029 2.73-1.19 2.73-2.611a2.41 2.41 0 0 0-.765-1.857 2.775 2.775 0 0 0-1.965-.755Zm.055 4.532c-1.205 0-1.517-1.381-1.517-2.17 0-.79.367-1.678 1.364-1.678.998 0 1.518 1.33 1.518 2.118 0 .79-.367 1.724-1.365 1.724v.006Zm5.226-4.486h.055v-.052c.46-.006.918.046 1.365.145l-.312.876a2.668 2.668 0 0 0-1.102-.29c-.477 0-.79.197-.79.54 0 .342.264.487.943.73l.05.019c.673.24 1.523.544 1.523 1.688 0 1.172-1.206 1.515-1.94 1.515a7.705 7.705 0 0 1-1.628-.244c0-.023-.055-.046-.055-.046v-.877h.104c.478.227.992.36 1.524.39.477 0 .79-.053.79-.54 0-.488-.319-.633-.998-.877-.68-.244-1.469-.685-1.469-1.561 0-.876.735-1.416 1.94-1.416Zm5.74 2.867c.043.394-.06.79-.293 1.103-.245.22-.563.33-.888.301-.985 0-1.034-.551-1.034-1.456v-2.862h-1.181v2.966c0 .952 0 2.258 2.117 2.258 2.118 0 2.167-.755 2.167-2.258v-2.966h-.888v2.914Zm5.006.418v-3.332h.777v5.224H43.4l-2.631-3.587v3.587h-.826v-5.224h1.022l2.484 3.332Z" fill="currentColor"></path><defs><linearGradient id="icon_tvlogo_tvchosun_h22_svg__a" x1="7.471" y1="5.993" x2="7.471" y2="16.335" gradientUnits="userSpaceOnUse"><stop offset="0.25" stop-color="#EC1C24"></stop><stop offset="0.75" stop-color="#AE1E23"></stop></linearGradient><linearGradient id="icon_tvlogo_tvchosun_h22_svg__b" x1="6.896" y1="7.699" x2="6.896" y2="13.445" gradientUnits="userSpaceOnUse"><stop offset="0.5" stop-color="#fff"></stop><stop offset="1" stop-color="#A36E5D"></stop></linearGradient></defs></svg><span class="blind">TV 조선</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/mbn"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand mbn"><path fill-rule="evenodd" clip-rule="evenodd" d="m14.172 7.38-2.099 2.256L9.937 7.38A1.202 1.202 0 0 0 9.061 7H7v8.15h2.328V9.91l2.558 2.716c.043.049.107.08.171.08a.217.217 0 0 0 .17-.08l2.596-2.716v5.24h2.328V7h-2.098a1.254 1.254 0 0 0-.876.38h-.005Zm13.771 1.844a2.079 2.079 0 0 1-.948 1.715 2.262 2.262 0 0 1 1.37 2.03c0 1.185-1.068 2.144-2.44 2.181h-7.401V7.043h6.942c1.297.075 2.477 1.034 2.477 2.18Zm-7.096-.311h4.042a.73.73 0 0 1 .726.648.682.682 0 0 1-.726.611h-4.042V8.913Zm4.464 4.324h-4.464v-1.264h4.464a.677.677 0 0 1 .496.177.711.711 0 0 1 .23.476.655.655 0 0 1-.726.617v-.006ZM36.6 7h2.365v8.15h-1.831a1.232 1.232 0 0 1-.876-.38l-4.694-4.978v5.358h-2.328V7h2.173c.331.005.646.145.881.38l4.31 4.598V7Z" fill="#EB6608"></path></svg><span class="blind">MBN</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/channela"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand channela"><g clip-path="url(#icon_tvlogo_channelA_h22_svg__a)"><path d="M35.155 14.29c.548 0 1.15-.32 1.431-.641l-.709-1.03c-.107.12-.307.267-.414.24-.107-.026-.12-.12-.12-.28V7.403h-1.391v5.47c0 .989.535 1.417 1.203 1.417ZM32.788 12.097s-.588.87-1.711.87c-.481 0-.963-.389-1.057-.71l3.437-1.002c0-1.137-.789-2.26-2.394-2.26a2.57 2.57 0 0 0-2.567 2.62c0 1.592 1.243 2.675 2.58 2.675 1.07 0 2.02-.615 2.394-1.177l-.682-1.016Zm-1.724-1.872c.387-.04.815.067.869.348.067.36-1.31.896-1.819 1.11l-.24.094c-.16-1.03.615-1.485 1.19-1.551ZM23.227 14.09h1.418v-2.233c0-.856.267-1.78 1.03-1.78.762 0 1.002.603 1.002 1.512v2.5h1.404v-2.955c0-1.296-.642-2.14-1.792-2.14-.976 0-1.39.683-1.551 1.11-.013.028-.027.054-.053.054-.027 0-.04-.013-.04-.04v-.923h-1.418v4.895ZM17.705 14.09h1.417v-2.233c0-.856.268-1.78 1.017-1.78.749 0 1.016.603 1.016 1.512v2.5h1.404v-2.955c0-1.296-.655-2.14-1.792-2.14-.976 0-1.39.683-1.551 1.11-.013.028-.027.054-.054.054-.026 0-.04-.013-.04-.04v-.923h-1.417v4.895ZM15.659 9.195v.923c0 .027-.027.04-.054.04-.013 0-.04 0-.053-.04-.16-.428-.602-1.123-1.511-1.123-1.404 0-2.02 1.43-2.02 2.62 0 1.19.616 2.675 2.02 2.675.91 0 1.35-.682 1.51-1.123.014-.04.028-.054.054-.054.04 0 .054.027.054.054v.923h1.377V9.195h-1.377Zm-1.11 3.999c-.696 0-1.137-.549-1.137-1.578 0-.976.442-1.538 1.137-1.538.588 0 1.03.562 1.03 1.538 0 1.03-.442 1.578-1.03 1.578ZM6.713 14.09H8.09v-2.233c0-.856.308-1.78 1.043-1.78.735 0 1.016.603 1.016 1.512v2.5h1.418v-2.955c0-1.296-.655-2.14-1.805-2.14-.976 0-1.39.67-1.538 1.097-.013.04-.027.067-.067.067-.053 0-.067-.04-.067-.08V7.404H6.713v6.686ZM3.236 14.29c1.993 0 3.009-1.685 3.009-2.862H4.814c0 .75-.696 1.551-1.578 1.551-.936 0-1.792-.882-1.792-2.246 0-1.364.882-2.3 1.792-2.3s1.404.655 1.55 1.805l1.391-.816c-.227-.829-.949-2.22-2.941-2.22C1.243 7.202 0 8.834 0 10.733c0 1.9 1.23 3.557 3.236 3.557Z" fill="currentColor"></path><path d="M42.002 6.001c-.535 0-.856.428-1.017.776l-2.717 5.669c-.388.802.121 1.845 1.044 1.845.549 0 .937-.307 1.299-.628l.365-.316v-1.614l-.5.298c-.106.067-.227.147-.294.094-.067-.04-.04-.134.014-.294l1.579-4.333c.067-.187.134-.294.227-.294.023 0 .046.003.066.013V6.004A1.072 1.072 0 0 0 42.002 6Z" fill="url(#icon_tvlogo_channelA_h22_svg__b)"></path><path d="m45.897 12.78-2.864-6.004c-.174-.348-.509-.776-1.03-.776a.949.949 0 0 0-.153.012v1.313c.045-.079.093-.122.152-.122.08 0 .148.04.201.241l1.7 6.004c.227.816.964.976 1.485.748.563-.254.75-.909.509-1.417Z" fill="url(#icon_tvlogo_channelA_h22_svg__c)"></path><path d="M45.723 9.062c-.053-.067-.174-.067-.32.027l-4.645 2.774v1.672l4.885-4.218c.107-.094.134-.188.08-.255Z" fill="url(#icon_tvlogo_channelA_h22_svg__d)"></path></g><defs><linearGradient id="icon_tvlogo_channelA_h22_svg__b" x1="38.898" y1="14.687" x2="42.901" y2="4.777" gradientUnits="userSpaceOnUse"><stop offset="0.3" stop-color="#7DD7FF"></stop><stop offset="0.7" stop-color="#196EFF"></stop></linearGradient><linearGradient id="icon_tvlogo_channelA_h22_svg__c" x1="42.205" y1="6.454" x2="45.44" y2="14.46" gradientUnits="userSpaceOnUse"><stop offset="0.1" stop-color="#196EFF"></stop><stop offset="0.23" stop-color="#186AF9"></stop><stop offset="0.41" stop-color="#1661E8"></stop><stop offset="0.6" stop-color="#1352CD"></stop><stop offset="0.82" stop-color="#0E3DA8"></stop><stop offset="1" stop-color="#0A2882"></stop></linearGradient><linearGradient id="icon_tvlogo_channelA_h22_svg__d" x1="41.342" y1="13.831" x2="44.951" y2="7.581" gradientUnits="userSpaceOnUse"><stop offset="0.3" stop-color="#7DD7FF"></stop><stop offset="0.39" stop-color="#6BC4FF"></stop><stop offset="0.57" stop-color="#3E94FF"></stop><stop offset="0.7" stop-color="#196EFF"></stop></linearGradient><clipPath id="icon_tvlogo_channelA_h22_svg__a"><path fill="#fff" transform="translate(0 6)" d="M0 0h46v8.291H0z"></path></clipPath></defs></svg><span class="blind">CHANNEL A</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/jtbc"><span class="icon_jtbc_w46h22"></span><span class="blind">JTBC</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/cjenm"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand cjenm"><path fill-rule="evenodd" clip-rule="evenodd" d="M22.881 8.167c-2.294-.863-4.614-.774-5.202.239-.594 1.02.272 3.437 1.904 5.44 1.632 2.004 3.94 1.939 5.212-.25 1.253-2.183.378-4.57-1.91-5.432" fill="#FF9700"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M11.207 8.865c2.038 1.33 4.318 1.732 5.127.87.817-.87.535-3.408-.59-5.707-1.126-2.3-3.39-2.724-5.14-.86-1.73 1.863-1.43 4.374.6 5.697" fill="#006ECD"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M18.507 15.862c-.325-2.335-1.538-4.225-2.75-4.225-1.223 0-3.012 1.896-4.053 4.234-1.038 2.338.144 4.229 2.764 4.229 2.608-.018 4.365-1.908 4.04-4.238Z" fill="#EF151E"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M5.783 15.065c1.538 0 2.329-1.084 2.329-1.084s-.341-.41-.797-.41c-.216 0-.366.087-.523.18-.222.128-.475.275-1.01.275a1.64 1.64 0 0 1-1.635-1.66c0-.932.735-1.694 1.636-1.694.47 0 .73.153.957.286l.006.004c.168.101.318.188.515.188.407 0 .829-.433.829-.433s-.72-1.084-2.307-1.084C4.194 9.633 3 10.83 3 12.368c0 1.538 1.244 2.697 2.783 2.697Zm2.732-4.668c0-.364.278-.609.694-.609h2.273v.367c0 .35-.3.607-.719.61v2.765c0 .663-.094 1.096-.322 1.5-.422.74-1.257 1.041-2.042 1.223-.2.048-.25.015-.206-.247l.005-.03c.032-.195.067-.412.567-.64.61-.277.697-.809.735-1.134.038-.329.003-3.437.003-3.437h-.988v-.368ZM30.448 10.747c.281 0 .519-.227.519-.496v-.463h-3.661c-.282 0-.52.236-.52.496v4.623h3.662c.281 0 .519-.293.519-.561v-.404H28.43c-.419 0-.49.197-.49.197v-1.337h2.385c.281 0 .519-.227.519-.496v-.469h-2.417c-.419 0-.49.197-.49.197v-1.287H30.447Zm12.059-.959v4.602c0 .335-.266.514-.635.514h-.488v-3.118l-.894 2.793c-.078.223-.366.325-.657.328h-.225l-1.103-3.12v2.597c0 .34-.26.52-.635.52h-.49v-4.596c0-.34.259-.52.634-.52h.803l1.16 3.393 1.048-3.07c.08-.212.3-.323.597-.323h.885Zm-7.198.496c0-.245.154-.496.413-.496h.713v4.623c0 .26-.222.496-.482.496h-.337l-2.67-3.428v2.932c0 .254-.222.496-.482.496h-.644v-4.623c0-.26.222-.496.482-.496h.494l2.513 3.166v-2.67Z" fill="currentColor"></path></svg><span class="blind">CJ ENM</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/kbs"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand kbs"><path fill-rule="evenodd" clip-rule="evenodd" d="m18.24 15.963-4.113-5.105 3.962-4.72h-2.791l-3.773 4.672V6.137H9.4v9.826h2.125V10.91l3.698 5.052h3.017ZM33.31 9.98c.616 0 3.24.391 3.24 2.964 0 2.723-2.648 3.016-2.648 3.016H27.71V14.37l4.981.003c1.445 0 1.43-1.36 1.43-1.36 0-1.489-1.706-1.43-1.706-1.43h-1.908c-.876 0-3.132-.311-3.132-2.612.001-2.765 2.8-2.833 2.8-2.833h5.667v1.57l-4.653.005c-1.504 0-1.48 1.151-1.48 1.151s.013 1.123 1.316 1.123l2.285-.007v.002Zm-6.033 3.239c0 1.661-1.361 2.743-2.858 2.743-1.265 0-5.992-.005-5.992-.005v-9.82h5.476s2.822.039 2.975 2.506c.107 1.703-1.023 2.086-1.023 2.086s1.422.591 1.422 2.49Zm-2.858 2.743h.001-.001Zm-1.24-8.23h-2.74v2.295h2.99c.303-.02 1.24-.09 1.24-1.14 0-1.221-1.49-1.155-1.49-1.155Zm-2.742 6.631h2.497c.973 0 2.142-.09 2.142-1.397s-1.557-1.365-1.557-1.365h-3.082v2.762Z" fill="#1D1160"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m18.24 15.963-4.113-5.105 3.962-4.72h-2.791l-3.773 4.672V6.137H9.4v9.826h2.125V10.91l3.698 5.052h3.017ZM33.31 9.98c.616 0 3.24.391 3.24 2.964 0 2.723-2.648 3.016-2.648 3.016H27.71V14.37l4.981.003c1.445 0 1.43-1.36 1.43-1.36 0-1.489-1.706-1.43-1.706-1.43h-1.908c-.876 0-3.132-.311-3.132-2.612.001-2.765 2.8-2.833 2.8-2.833h5.667v1.57l-4.653.005c-1.504 0-1.48 1.151-1.48 1.151s.013 1.123 1.316 1.123l2.285-.007v.002Zm-6.033 3.239c0 1.661-1.361 2.743-2.858 2.743-1.265 0-5.992-.005-5.992-.005v-9.82h5.476s2.822.039 2.975 2.506c.107 1.703-1.023 2.086-1.023 2.086s1.422.591 1.422 2.49Zm-2.858 2.743h.001-.001Zm-1.24-8.23h-2.74v2.295h2.99c.303-.02 1.24-.09 1.24-1.14 0-1.221-1.49-1.155-1.49-1.155Zm-2.742 6.631h2.497c.973 0 2.142-.09 2.142-1.397s-1.557-1.365-1.557-1.365h-3.082v2.762Z" fill="currentColor"></path></svg><span class="blind">KBS</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/mbc"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand mbc"><path fill-rule="evenodd" clip-rule="evenodd" d="M15.309 6.2H9.233C7.659 6.2 6.7 6.92 6.7 8.41v7.073h2.688v-6.72h1.541v6.72h2.682v-6.72h1.543v6.72h2.688V8.41c0-1.49-.96-2.21-2.533-2.21Zm17.678 6.767V8.746h6.333V6.2h-6.63c-1.625 0-2.482.853-2.482 2.192v4.935c0 1.216.715 2.155 2.528 2.155h6.62v-2.516h-6.37.001Zm-6.993-2.439v2.424h-3.982V8.756h3.982v1.764c1.388 0 2.9-.556 2.9-2.093s-1.172-2.2-3.043-2.227h-6.57v9.283h6.625c1.876 0 3.55-.678 3.55-2.472 0-1.795-1.477-2.483-3.463-2.483h.001Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.309 6.2H9.233C7.659 6.2 6.7 6.92 6.7 8.41v7.073h2.688v-6.72h1.541v6.72h2.682v-6.72h1.543v6.72h2.688V8.41c0-1.49-.96-2.21-2.533-2.21Zm17.678 6.767V8.746h6.333V6.2h-6.63c-1.625 0-2.482.853-2.482 2.192v4.935c0 1.216.715 2.155 2.528 2.155h6.62v-2.516h-6.37.001Zm-6.993-2.439v2.424h-3.982V8.756h3.982v1.764c1.388 0 2.9-.556 2.9-2.093s-1.172-2.2-3.043-2.227h-6.57v9.283h6.625c1.876 0 3.55-.678 3.55-2.472 0-1.795-1.477-2.483-3.463-2.483h.001Z" fill="#fff" fill-opacity="0.1"></path></svg><span class="blind">MBC</span></a></li><li role="presentation" class="Header_list_item__5svjK"><a role="menuitem" aria-current="false" class="Header_link_brand__ShZKj" href="/b/sbs"><svg viewBox="0 0 46 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="46" height="22" class="icon_brand sbs"><path fill-rule="evenodd" clip-rule="evenodd" d="m16.465 10.75-2.6-2.34a.834.834 0 0 1-.295-.631c0-.488.426-.884.953-.884h2.878v-1.22H13c-1.365 0-2.5.901-2.5 2.312 0 .603.25 1.151.659 1.562l3.064 2.832s.517.366.337.97c-.178.602-.962.602-1.255.602H10.5v2.471h4.256c1.721 0 3.117-1.289 3.117-2.88v-.024c.047-1.188-.605-2.041-1.408-2.77Zm17.182 0-2.6-2.34a.832.832 0 0 1-.295-.631c0-.488.427-.884.953-.884h2.878v-1.22h-4.4c-1.366 0-2.5.901-2.5 2.312 0 .603.248 1.151.657 1.562l3.064 2.832s.517.366.337.97c-.18.602-.962.602-1.255.602h-2.803v2.471h4.256c1.72 0 3.116-1.289 3.116-2.88v-.024c.048-1.188-.605-2.041-1.409-2.77Zm-8.767-.475c1.473.493 2.21 1.738 2.21 3.028 0 .961-.447 1.815-1.108 2.386-.746.596-1.666.713-2.102.733h-5.168L18.71 5.687h4.858v.003s1.237-.043 2.064.514c.575.414.941 1.048.941 1.805 0 1.129-.578 1.932-1.693 2.266Zm-2.376-3.36h-1.166V9.43h1.221c.934 0 1.514-.52 1.441-1.353-.1-1.162-1.32-1.162-1.496-1.162Zm-1.166 7.039h1.4c.935 0 1.655-.592 1.583-1.538-.102-1.32-1.462-1.322-1.638-1.322h-1.345v2.86Z" fill="currentColor"></path><path fill-rule="evenodd" clip-rule="evenodd" d="m16.465 10.75-2.6-2.34a.834.834 0 0 1-.295-.631c0-.488.426-.884.953-.884h2.878v-1.22H13c-1.365 0-2.5.901-2.5 2.312 0 .603.25 1.151.659 1.562l3.064 2.832s.517.366.337.97c-.178.602-.962.602-1.255.602H10.5v2.471h4.256c1.721 0 3.117-1.289 3.117-2.88v-.024c.047-1.188-.605-2.041-1.408-2.77Zm17.182 0-2.6-2.34a.832.832 0 0 1-.295-.631c0-.488.427-.884.953-.884h2.878v-1.22h-4.4c-1.366 0-2.5.901-2.5 2.312 0 .603.248 1.151.657 1.562l3.064 2.832s.517.366.337.97c-.18.602-.962.602-1.255.602h-2.803v2.471h4.256c1.72 0 3.116-1.289 3.116-2.88v-.024c.048-1.188-.605-2.041-1.409-2.77Zm-8.767-.475c1.473.493 2.21 1.738 2.21 3.028 0 .961-.447 1.815-1.108 2.386-.746.596-1.666.713-2.102.733h-5.168L18.71 5.687h4.858v.003s1.237-.043 2.064.514c.575.414.941 1.048.941 1.805 0 1.129-.578 1.932-1.693 2.266Zm-2.376-3.36h-1.166V9.43h1.221c.934 0 1.514-.52 1.441-1.353-.1-1.162-1.32-1.162-1.496-1.162Zm-1.166 7.039h1.4c.935 0 1.655-.592 1.583-1.538-.102-1.32-1.462-1.322-1.638-1.322h-1.345v2.86Z" fill="#fff" fill-opacity="0.1"></path></svg><span class="blind">SBS</span></a></li></ul></nav><div class="Header_mode_wrap__CnQLB"><button class="Header_button_mode__K7u1M"><span class="Header_icon_applied__dY7x7"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22"><g clip-path="url(#icon_light_mode_svg__a)" stroke="currentColor" stroke-width="1.5"><circle cx="11" cy="11" r="4.25"></circle><path d="M11 1.5V4M11 18v2.5M4.937 4.92l.707.708M16 16.5l.707.707M17 5.707 17.707 5M4.942 17.08l.707-.708M18 11h2.5M1.5 11H4" stroke-linecap="round"></path></g><defs><clipPath id="icon_light_mode_svg__a"><path fill="#fff" d="M0 0h22v22H0z"></path></clipPath></defs></svg></span><span class="Header_icon_next__L5wXj"><svg viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="22" height="22"><path d="M18.61 12.475a7.75 7.75 0 1 1-9.124-9.078C8.676 4.806 8.317 6.2 8.344 7.5c.035 1.72.748 3.224 1.893 4.297 2.012 1.886 5.253 2.377 8.373.678Z" stroke="currentColor" stroke-width="1.5"></path></svg></span><span class="blind">다크 모드로 변경</span></button><span class="Header_tooltip_hover__rNAYS"><span class="Header_icon_triangle__DSsEC"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none" class="Header_icon_light__EoVJq"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1H17Z" fill="#F8F8F8"></path><path d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1" stroke="#E7E7E7"></path></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="10" viewBox="0 0 18 10" fill="none" class="Header_icon_dark__KyHWb"><path fill-rule="evenodd" clip-rule="evenodd" d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1H17Z" fill="#343436"></path><path d="M17 1L10.4471 8.3382C9.68468 9.19202 8.4187 9.22387 7.61948 8.40935C7.59676 8.3862 7.57455 8.36248 7.55288 8.3382L1 1" stroke="#343436"></path></svg></span><span class="Header_tooltip_text__pbCxh">다크<span class="Header_only_wide__t0IuF"> 모드</span></span></span></div><a href="https://creator.tv.naver.com" class="Header_link_studio_menu__KefUn"><svg viewBox="0 0 90 17" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="90" height="17"><path d="M.513 8.545c-.018-1.278.446-2.372 1.39-3.28C2.85 4.346 3.97 3.9 5.265 3.928c.846 0 1.611.198 2.295.594a4.217 4.217 0 0 1 1.634 1.62l-1.378.972c-.638-.999-1.489-1.498-2.551-1.498-.828 0-1.516.279-2.065.837-.54.558-.81 1.26-.81 2.106 0 .846.27 1.543.81 2.092.548.549 1.237.824 2.065.824 1.062 0 1.913-.5 2.551-1.499l1.378.972a4.217 4.217 0 0 1-1.62 1.633c-.694.388-1.468.581-2.322.581-1.305.027-2.43-.414-3.375-1.323C.94 10.921.486 9.823.512 8.545Zm13.912-2.228v1.607h-.486c-.558 0-1 .148-1.323.446-.315.296-.473.729-.473 1.296V13h-1.822V6.317h1.674v.797c.468-.585 1.08-.877 1.836-.877.225 0 .423.026.594.08Zm6.84 3.956h-4.684c.108.423.324.752.648.986.333.224.742.337 1.228.337.657 0 1.278-.225 1.863-.675l.756 1.242c-.8.666-1.692.999-2.673.999-1.026.018-1.899-.315-2.619-.999-.71-.693-1.057-1.526-1.04-2.498-.017-.962.32-1.79 1.013-2.483.693-.694 1.521-1.031 2.484-1.013.918 0 1.67.297 2.255.891.594.594.89 1.332.89 2.214 0 .324-.04.657-.12.999Zm-4.684-1.282h3.037c-.009-.405-.153-.73-.432-.973-.27-.252-.607-.378-1.012-.378-.387 0-.725.122-1.013.365-.288.243-.481.571-.58.986Zm11.53.04V13h-1.674v-.648c-.522.54-1.201.81-2.038.81-.702 0-1.265-.185-1.688-.554-.414-.369-.62-.85-.62-1.444 0-.603.224-1.075.674-1.418.46-.35 1.076-.526 1.85-.526h1.674v-.297c0-.378-.108-.666-.324-.864-.207-.207-.513-.31-.918-.31-.333 0-.635.072-.905.216-.27.143-.558.377-.864.701l-.945-1.12c.774-.918 1.746-1.377 2.916-1.377.882 0 1.58.252 2.093.756.513.495.77 1.197.77 2.106Zm-1.822 1.471v-.08h-1.431c-.621 0-.932.224-.932.675 0 .225.086.405.257.54.18.125.414.188.702.188.405 0 .738-.121.999-.364.27-.252.405-.572.405-.959Zm7.57.973V13a5.17 5.17 0 0 1-1.256.162c-.855 0-1.517-.212-1.985-.635-.459-.422-.688-1.048-.688-1.876V7.856h-1.053V6.318h1.053V4.63h1.822v1.688h1.89v1.538h-1.89v2.633c0 .378.095.648.284.81.198.153.517.23.958.23.153 0 .441-.018.864-.054Zm.513-1.823c-.018-.954.328-1.777 1.04-2.47.71-.694 1.556-1.031 2.537-1.013.981-.018 1.827.32 2.538 1.013.72.692 1.071 1.516 1.053 2.47.018.954-.333 1.782-1.053 2.484-.72.693-1.57 1.03-2.551 1.013-.981.018-1.827-.32-2.538-1.013-.702-.702-1.044-1.53-1.026-2.484Zm4.806 1.31c.333-.342.5-.774.5-1.296 0-.523-.167-.959-.5-1.31a1.6 1.6 0 0 0-1.229-.526c-.504 0-.918.175-1.242.526-.324.342-.486.778-.486 1.31 0 .521.162.954.486 1.295.324.342.738.514 1.242.514.495 0 .905-.171 1.229-.514Zm7.59-4.644v1.606h-.487c-.558 0-.999.148-1.323.446-.315.296-.472.729-.472 1.296V13h-1.823V6.317h1.674v.797c.468-.585 1.08-.877 1.836-.877.225 0 .423.026.594.08Zm3.813 4.873 1.256-.945c.63.864 1.359 1.296 2.187 1.296.396 0 .706-.085.931-.256a.885.885 0 0 0 .338-.73c0-.251-.077-.445-.23-.58-.153-.144-.454-.32-.904-.527l-.959-.431c-1.44-.64-2.16-1.495-2.16-2.566 0-.755.28-1.363.837-1.822.558-.468 1.265-.702 2.12-.702.666 0 1.25.153 1.755.459.504.297.9.707 1.188 1.229l-1.242.958c-.46-.684-1.026-1.026-1.701-1.026-.324 0-.59.077-.797.23a.745.745 0 0 0-.31.634c0 .225.072.41.216.553.153.136.427.293.823.473l1.013.446c.765.341 1.323.715 1.674 1.12.35.396.526.891.526 1.485 0 .801-.292 1.449-.877 1.944-.585.486-1.332.729-2.241.729a3.95 3.95 0 0 1-2.025-.527 3.9 3.9 0 0 1-1.418-1.444Zm11.968.284V13a5.17 5.17 0 0 1-1.256.162c-.855 0-1.516-.212-1.984-.635-.46-.422-.689-1.048-.689-1.876V7.856h-1.053V6.318h1.053V4.63h1.823v1.688h1.89v1.538h-1.89v2.633c0 .378.094.648.283.81.198.153.518.23.959.23.153 0 .44-.018.864-.054Zm.956-1.418v-3.74h1.822v3.889c0 .386.117.697.351.931.243.234.549.351.918.351.36 0 .657-.117.891-.351.234-.243.351-.553.351-.931V6.318h1.823v3.739c0 .918-.293 1.665-.878 2.241-.576.576-1.305.864-2.187.864-.9 0-1.642-.284-2.228-.85-.575-.576-.863-1.328-.863-2.255Zm12.458-7.182h1.823V13h-1.674v-.823c-.46.657-1.175.985-2.147.985-.936 0-1.71-.329-2.322-.986-.612-.665-.918-1.502-.918-2.51 0-1.008.306-1.841.918-2.498.612-.666 1.386-.999 2.322-.999.846 0 1.512.266 1.998.796v-4.09Zm-.459 8.14c.324-.324.486-.774.486-1.35 0-.575-.162-1.025-.486-1.35a1.61 1.61 0 0 0-1.202-.499c-.495 0-.909.171-1.242.513-.323.342-.486.783-.486 1.323 0 .549.163.995.487 1.337.323.341.737.512 1.241.512.486 0 .887-.162 1.202-.486ZM79.294 13V6.317h1.822V13h-1.823Zm-.257-9.113c0-.324.112-.594.337-.81.225-.216.5-.324.824-.324.324 0 .598.108.823.325.234.216.351.486.351.81 0 .314-.117.58-.35.796-.226.216-.5.324-.824.324-.324 0-.599-.108-.824-.324a1.06 1.06 0 0 1-.337-.796Zm3.204 5.765c-.018-.954.328-1.777 1.04-2.47.71-.694 1.556-1.031 2.537-1.013.981-.018 1.827.32 2.538 1.013.72.692 1.071 1.516 1.053 2.47.018.954-.333 1.782-1.053 2.484-.72.693-1.57 1.03-2.551 1.013-.981.018-1.827-.32-2.538-1.013-.702-.702-1.044-1.53-1.026-2.484Zm4.806 1.31c.333-.342.5-.774.5-1.296 0-.523-.167-.959-.5-1.31a1.6 1.6 0 0 0-1.229-.526c-.504 0-.918.175-1.242.526-.324.342-.486.778-.486 1.31 0 .521.162.954.486 1.295.324.342.738.514 1.242.514.495 0 .905-.171 1.229-.514Z" fill="currentColor"></path></svg><span class="blind">Creator Studio</span></a></div></div><div class="Header_layer_dimmed__x0zGg" aria-hidden="true"></div></div><div class="_search_area Search_search_wrap__lqZZ8  "><div class="_search_dimmed Search_layer_dimmed__nYVAD" aria-hidden="true"></div><div class="Search_layer_search__srb8X"><div class="Search_input_section__m3aHz"><label class="Search_label_search__38jIt" for="__gnb__searchInput"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path d="m14.5 13.6 3 3" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="9.6" cy="9.2" r="6.4" stroke="currentColor" stroke-width="1.6"></circle></svg><span class="blind">검색창</span></label><input type="text" id="__gnb__searchInput" class="Search_input_search__Ekfhu" value="" placeholder="동영상, 채널, 라이브를 검색할 수 있어요." autoComplete="off"/><span class="Search_search_control__IFJCN"><button type="button" class="Search_button_erase__MLPAp"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path fill-rule="evenodd" clip-rule="evenodd" d="M10 18a8 8 0 1 0 0-16 8 8 0 0 0 0 16Zm3.158-11.159a.8.8 0 0 1 0 1.132L11.131 10l2.027 2.027a.8.8 0 0 1-1.131 1.131L10 11.131l-2.027 2.027a.8.8 0 0 1-1.132-1.131L8.868 10 6.841 7.973A.8.8 0 1 1 7.973 6.84L10 8.868l2.027-2.027a.8.8 0 0 1 1.131 0Z" fill="currentColor"></path></svg><span class="blind">검색어 지우기</span></button><button class="Search_button_submit__vb8zX Search_disabled__0Ncc8" aria-disabled="false"><svg viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="20" height="20"><path d="m14.5 13.6 3 3" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="9.6" cy="9.2" r="6.4" stroke="currentColor" stroke-width="1.6"></circle></svg><span class="blind">검색</span></button><button type="button" class="Search_button_cancel__FK8Og">취소</button></span></div><div class="Search_keyword_section__01fmY"><div class="Search_scroll_wrap__zF_se" style="display:none"></div></div></div></div><div class="Header_right_wrap__HlL0A"><a href="https://creator.tv.naver.com" class="Header_link_studio__Z1DYf"><svg viewBox="0 0 72 14" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="72" height="14"><path d="M.415 6.398C.4 5.364.775 4.48 1.539 3.745c.764-.742 1.67-1.102 2.718-1.08.684 0 1.303.16 1.856.48.56.313 1 .75 1.32 1.31L6.32 5.24c-.516-.808-1.204-1.212-2.063-1.212-.67 0-1.226.226-1.67.677-.437.451-.655 1.019-.655 1.703 0 .684.218 1.248.655 1.692.444.444 1 .666 1.67.666.859 0 1.547-.404 2.063-1.212l1.114.786c-.313.56-.75 1-1.31 1.32-.56.314-1.186.47-1.878.47-1.055.022-1.965-.335-2.729-1.07C.76 8.32.393 7.431.415 6.398Zm11.24-1.801v1.299h-.394c-.451 0-.808.12-1.07.36-.254.24-.382.59-.382 1.048V10H8.336V4.597h1.353v.644a1.81 1.81 0 0 1 1.485-.71c.182 0 .342.022.48.066Zm5.52 3.198h-3.787c.088.342.262.608.524.797.27.182.6.273.993.273.532 0 1.034-.182 1.507-.546l.611 1.004c-.648.539-1.368.808-2.161.808-.83.014-1.536-.255-2.118-.808-.575-.56-.855-1.233-.84-2.02-.015-.778.258-1.447.818-2.008.56-.56 1.23-.833 2.009-.818.742 0 1.35.24 1.823.72.48.48.72 1.077.72 1.79 0 .262-.033.532-.098.808Zm-3.787-1.037h2.456c-.007-.327-.123-.59-.35-.786a1.153 1.153 0 0 0-.818-.306 1.23 1.23 0 0 0-.819.295c-.232.197-.389.462-.469.797Zm9.314.033V10h-1.354v-.524c-.422.437-.971.655-1.648.655-.567 0-1.022-.15-1.364-.448-.335-.298-.502-.687-.502-1.168 0-.487.182-.87.545-1.146.372-.283.87-.425 1.496-.425h1.353v-.24c0-.306-.087-.539-.262-.7-.167-.167-.414-.25-.742-.25-.27 0-.513.058-.731.174-.218.117-.451.306-.699.568l-.764-.906c.626-.742 1.412-1.113 2.358-1.113.713 0 1.277.203 1.692.61.415.401.622.969.622 1.704Zm-1.474 1.19v-.066h-1.157c-.502 0-.753.182-.753.546 0 .182.07.327.208.437.145.101.334.152.567.152.328 0 .597-.098.808-.294.218-.204.327-.462.327-.775Zm6.111.786V10c-.349.087-.687.131-1.015.131-.69 0-1.226-.171-1.604-.513-.371-.342-.557-.848-.557-1.517V5.84h-.851V4.597h.851V3.232h1.474v1.365h1.528V5.84h-1.528V7.97c0 .305.076.524.229.655.16.123.418.185.775.185.124 0 .357-.014.699-.043Zm.406-1.474c-.014-.771.266-1.437.84-1.998a2.762 2.762 0 0 1 2.053-.818 2.762 2.762 0 0 1 2.052.818c.582.56.866 1.227.852 1.998.014.771-.27 1.44-.852 2.008-.582.56-1.27.834-2.063.82a2.762 2.762 0 0 1-2.052-.82c-.568-.567-.844-1.237-.83-2.008Zm3.886 1.059c.27-.277.404-.626.404-1.048 0-.422-.134-.775-.404-1.059a1.294 1.294 0 0 0-.993-.426c-.408 0-.742.142-1.004.426-.262.277-.393.63-.393 1.059 0 .422.13.771.393 1.048.262.276.596.415 1.004.415.4 0 .731-.139.993-.415Zm6.127-3.755v1.299h-.392c-.452 0-.808.12-1.07.36-.255.24-.382.59-.382 1.048V10H34.44V4.597h1.354v.644a1.81 1.81 0 0 1 1.484-.71c.182 0 .342.022.48.066Zm1.818 3.94 1.015-.764c.51.699 1.099 1.048 1.768 1.048.32 0 .572-.069.753-.207a.715.715 0 0 0 .273-.59c0-.203-.062-.36-.185-.47-.124-.116-.368-.257-.732-.425l-.775-.35c-1.164-.516-1.746-1.207-1.746-2.073 0-.611.225-1.103.677-1.474.45-.378 1.022-.567 1.713-.567.539 0 1.012.123 1.42.37.407.24.727.572.96.994l-1.004.775c-.371-.553-.83-.83-1.376-.83-.262 0-.476.062-.644.186a.602.602 0 0 0-.25.513c0 .182.058.331.174.448.124.109.346.236.666.382l.819.36c.618.276 1.07.578 1.353.906.284.32.426.72.426 1.2 0 .648-.237 1.172-.71 1.573-.473.393-1.077.589-1.812.589-.604 0-1.15-.142-1.637-.426a3.153 3.153 0 0 1-1.146-1.168Zm9.667.23V10c-.35.087-.688.131-1.015.131-.692 0-1.226-.171-1.605-.513-.37-.342-.556-.848-.556-1.517V5.84h-.852V4.597h.852V3.232h1.473v1.365h1.528V5.84H47.54V7.97c0 .305.077.524.23.655.16.123.418.185.774.185.124 0 .357-.014.699-.043Zm.764-1.147V4.597h1.473V7.74c0 .313.095.564.284.754.196.189.444.283.742.283a.976.976 0 0 0 .72-.283c.19-.197.284-.448.284-.754V4.597h1.474V7.62c0 .743-.236 1.347-.71 1.812-.465.466-1.055.699-1.768.699-.728 0-1.328-.23-1.8-.688-.467-.465-.7-1.073-.7-1.823ZM60.07 1.813h1.473V10h-1.353v-.666c-.371.531-.95.797-1.736.797-.757 0-1.382-.266-1.877-.797-.495-.538-.742-1.215-.742-2.03 0-.815.247-1.488.742-2.02.495-.538 1.12-.807 1.877-.807.684 0 1.223.214 1.616.644V1.813ZM59.7 8.395c.262-.262.393-.625.393-1.091 0-.466-.131-.83-.393-1.092a1.302 1.302 0 0 0-.972-.404c-.4 0-.735.139-1.004.415-.262.277-.393.633-.393 1.07 0 .444.13.804.393 1.08.262.277.597.415 1.004.415.393 0 .717-.13.972-.393ZM62.754 10V4.597h1.474V10h-1.474Zm-.207-7.368c0-.262.09-.48.273-.655a.926.926 0 0 1 .666-.262c.262 0 .483.087.665.262.19.175.284.393.284.655 0 .255-.094.47-.284.644a.926.926 0 0 1-.665.262.926.926 0 0 1-.666-.262.858.858 0 0 1-.273-.644Zm2.581 4.66c-.014-.77.266-1.436.84-1.997a2.762 2.762 0 0 1 2.053-.818 2.762 2.762 0 0 1 2.052.818c.582.56.866 1.227.851 1.998.015.771-.269 1.44-.851 2.008-.582.56-1.27.834-2.063.82a2.762 2.762 0 0 1-2.052-.82c-.568-.567-.844-1.237-.83-2.008Zm3.886 1.06c.27-.277.404-.626.404-1.048 0-.422-.135-.775-.404-1.059a1.294 1.294 0 0 0-.993-.426c-.408 0-.743.142-1.005.426-.262.277-.392.63-.392 1.059 0 .422.13.771.392 1.048.262.276.597.415 1.005.415.4 0 .731-.139.993-.415Z" fill="currentColor"></path></svg><span class="blind">Creator Studio</span></a><span class="Header_search_area__18ZCR"><button type="button" class="Header_button_search__Cu5Vz"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="30" height="30"><path d="m20.5 20.5 4 4" stroke="currentColor" stroke-width="1.65" stroke-linecap="round"></path><circle cx="14.5" cy="14.5" r="8.175" stroke="currentColor" stroke-width="1.65"></circle></svg><span class="blind">검색</span></button></span><div class="Header_upload_area__RYOr9"><button type="button" class="Header_link_upload__ZGZHe"><svg viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" width="30" height="30"><path d="M14.5 10v9M19 14.5h-9" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"></path><path d="M3.8 11A7.2 7.2 0 0 1 11 3.8h7a7.2 7.2 0 0 1 7.2 7.2v7a7.2 7.2 0 0 1-7.2 7.2h-7A7.2 7.2 0 0 1 3.8 18v-7Z" stroke="currentColor" stroke-width="1.6"></path></svg><span class="blind">영상 업로드</span></button><div class="Header_upload_tooltip__IWs2i"><span class="Header_tooltip_text__pbCxh">이제 누구나 네이버TV에 영상을 <br class="Header_break_sub__tf6MV"/>올릴 수 있어요!<br class="Header_break_main__WQENw"/>내 채널을 만들고, <br class="Header_break_sub__tf6MV"/>네이버TV 크리에이터에 도전하세요!</span></div></div>
 
 <script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"channelInfo":{"currentLive":null,"currentLives":[],"representClip":{"clipNo":18845374,"title":"맞구독 좋아요^^ 자동차보험료 비교견적사이트","videoId":"234F54F1FE41FC82E1EF18D00D22679809A4","description":"맞구독좋아요^^ 100% 빠르게 친추합니다.\r\nhttp://www.4pcbs.com 자동차보험료 비교견적사이트 입니다.\r\n보험사별 나의 자동차보험료를 알아볼수 있으며,\r\n간편 가입 및 갱신이 가능합니다.","thumbnailImageUrl":"https://phinf.pstatic.net/tvcast/20210307_223/Fac8E_1615116170464QXGy3_JPEG/2fb80513-7f37-11eb-bba0-a0369ff94f34_03.jpg","firstExposureDatetime":"2021-03-07T20:22:50+0900","registerDateTime":"2021-03-07T20:22:50+0900","playCount":2199,"likeItCount":56,"commentCount":null,"optionFields":[{"title":"등록일","description":"2021.03.07"},{"title":"카테고리","description":"자동차"}],"playTime":45,"displayPlayTime":"0:45","orientation":"LANDSCAPE","channelType":null,"channelId":"cardamoa","channelName":"자동차보험료비교견적사이트","channelEmblemImageUrl":"https://phinf.pstatic.net/tvcast/20210218_220/n5xxM_1613641053741vwuIe_JPEG/1613641053706.jpg","channelLogo":null,"channelUrl":"https://tv.naver.com/cardamoa","channelRepresentImageUrl":"","channelCategoryName":null,"brandCode":null,"tags":["맞구독","좋아요","자동차보험료비교견적사이트","다이렉트자동차보험료비교견적","다이렉트자동차보험","자동차보험료계산기"],"authType":"NORMAL_VOD","clipTrailerUrl":null,"shareUrl":null,"recId":null,"airsSessionId":null,"airsBypass":null,"clipType":null,"episodeNo":null,"displayChannelId":"cardamoa","globalService":true,"hash":"YLjtG4ipiiOK","shorts":false,"trailerUrl":null,"smr":false,"multiTrack":false,"opened":true,"channelEmblem":"https://phinf.pstatic.net/tvcast/20210218_220/n5xxM_1613641053741vwuIe_JPEG/1613641053706.jpg","highlight":false,"adultVideo":false},"showMenu":null,"channelId":"cardamoa","displayChannelId":"cardamoa","channelName":"자동차보험료비교견적사이트","channelHomeUrl":"https://tv.naver.com/cardamoa","channelLogo":"","channelBackgroundImageUrl":"","channelLandscapeBackgroundImageUrl":null,"channelProfileImageUrl":"https://phinf.pstatic.net/tvcast/20210218_220/n5xxM_1613641053741vwuIe_JPEG/1613641053706.jpg","channelBannerImageUrlPc":"https://phinf.pstatic.net/tvcast/20210310_4/nhopp_1615331038871c22mW_JPEG/1615331038827.jpg","channelBannerImageUrlMobile":"https://phinf.pstatic.net/tvcast/20210218_167/FDcgG_1613641151945asN0x_JPEG/1613641151893.jpg","dominantColor":"#326760","description":"자동차보험료 비교견적사이트 \r\n내자동차보험 조회 및 무료견적을 받아보시는 경우\r\n\r\nhttp://www.4pcbs.com 통하여\r\n보험소식 및 다이렉트자동차보험을 보험사별 알아보시기 바랍니다.\r\n무료견적 및 다양한 소식들을 받아보세요.\r\n\r\n다이렉트자동차보험 특약할인등은 보험사별 차이가 있습니다.\r\n갱신전 한번 꼭!! 알아보셔서 \r\n경제적으로 저렴하게 가입해 보시길 바랍니다.","displayBroadcastingTime":"","subscriptionCount":106,"registerDateTime":"2021-02-18T18:29:59+0900","subscription":null,"schedules":[],"channelLinks":[{"url":"http://www.4pcbs.com","description":"자동차보험료비교견적사이트"},{"url":"http://cardamoa.direct-ins.net","description":"다이렉트자동차보험료비교견적"},{"url":"2014posttistory.com","description":"자동차보험료계산기"}],"homeBanners":[],"isOriginal":false,"isCommunityOpen":false,"timefeedInfo":null,"dssId":null,"openTalkCategoryId":null,"brandInfo":null,"talkId":null,"homeClipRecommendCode":"RECENT","categoryName":"자동차","showType":null,"showHostNames":null,"showOriginalTypeCode":null,"isEnd":null,"noticeMessage":null,"promotionBanner":{"pcImageUrl":"https://phinf.pstatic.net/tvcast/20210218_22/oX96k_1613641356623ohgdt_JPEG/1613641356559.jpg","pcLinkUrl":"http://www.4pcbs.com","mobileImageUrl":"https://phinf.pstatic.net/tvcast/20210218_298/FgWQf_1613641368944mFoPV_JPEG/1613641368925.jpg","mobileLinkUrl":"http://www.4pcbs.com","mobileBackgroundColor":"#1D1D1D"},"channelType":"CHANNEL_GENERAL","registerYmdt":1613640599000},"channelType":"CHANNEL_GENERAL","channelBanner":{"channelBannerImageUrlPc":"https://phinf.pstatic.net/tvcast/20210310_4/nhopp_1615331038871c22mW_JPEG/1615331038827.jpg","channelBannerImageUrlMobile":"https://phinf.pstatic.net/tvcast/20210218_167/FDcgG_1613641151945asN0x_JPEG/1613641151893.jpg"}},"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36","requestPath":"/cardamoa","serverTime":1762999881568,"__N_SSP":true},"page":"/[showId]","query":{"showId":"cardamoa"},"buildId":"7e991e_b15","assetPrefix":"https://static-now.pstatic.net/now-web-resource/real/7e991e_b15","isFallback":false,"dynamicIds":[4480],"gssp":true,"appGip":true,"scriptLoader":[]}</script>
 
@@ -629,3 +915,4 @@
 <link rel="preload" href="https://static.cdninstagram.com/rsrc.php/v4/yY/r/Eil-fzuGz0e.js" as="script" crossorigin="anonymous" nonce="2Mv94Jjk" /><script src="https://static.cdninstagram.com/rsrc.php/v4/yY/r/Eil-fzuGz0e.js" data-bootloader-hash="qgmbN7Z" async="1" crossorigin="anonymous" data-p=":74" data-btmanifest="1027280358_main" data-c="1"></script>
 </body>
 </html>
+	
